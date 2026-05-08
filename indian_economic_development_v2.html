@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indian Economic Development | Class 12 CBSE</title>
+<style>
+/* ===== OFFLINE-SAFE FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Noto+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --saffron: #E8590C;
+  --deep-saffron: #C94B08;
+  --gold: #F0A500;
+  --green: #0A7A00;
+  --deep-green: #065700;
+  --blue: #1255A1;
+  --navy: #0B1E35;
+  --light-bg: #F4EFE6;
+  --card-shadow: 0 3px 16px rgba(0,0,0,0.10);
+  --radius: 14px;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: 'Noto Sans', 'Segoe UI', Arial, sans-serif;
+  background: var(--light-bg);
+  color: var(--navy);
+  min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+  background: linear-gradient(135deg,#0B1E35 0%,#1a3a5c 100%);
+  color: white;
+  position: sticky; top:0; z-index:200;
+  box-shadow: 0 3px 16px rgba(0,0,0,0.35);
+}
+.tricolor { height:5px; background:linear-gradient(to right,#E8590C 33.3%,#fff 33.3% 66.6%,#0A7A00 66.6%); }
+.hdr { display:flex; align-items:center; justify-content:space-between; padding:12px 20px; flex-wrap:wrap; gap:8px; }
+.hdr-title { font-family:'Baloo 2',Arial,cursive; font-size:clamp(15px,3.5vw,21px); font-weight:800; }
+.hdr-title span { color:var(--gold); }
+.hdr-sub { font-size:11px; opacity:0.65; margin-top:1px; }
+.hdr-badge { background:var(--saffron); color:#fff; padding:5px 13px; border-radius:20px; font-size:11px; font-weight:700; }
+
+/* TABS */
+.nav-tabs { display:flex; background:#0B1E35; border-top:1px solid rgba(255,255,255,0.08); overflow-x:auto; scrollbar-width:none; }
+.nav-tabs::-webkit-scrollbar { display:none; }
+.tab-btn { flex:1; min-width:110px; padding:11px 14px; background:none; border:none; color:rgba(255,255,255,0.55); font-family:'Baloo 2',Arial,cursive; font-size:13px; font-weight:600; cursor:pointer; transition:all 0.25s; border-bottom:3px solid transparent; white-space:nowrap; }
+.tab-btn:hover { color:#fff; background:rgba(255,255,255,0.05); }
+.tab-btn.active { color:var(--gold); border-bottom-color:var(--gold); background:rgba(240,165,0,0.1); }
+
+/* SECTIONS */
+.section { display:none; padding:18px; max-width:980px; margin:0 auto; }
+.section.active { display:block; }
+
+/* HERO */
+.hero { background:linear-gradient(135deg,#0B1E35,#1a3a5c); color:#fff; border-radius:var(--radius); padding:24px 28px; margin-bottom:18px; position:relative; overflow:hidden; }
+.hero::after { content:'🇮🇳'; position:absolute; right:16px; top:50%; transform:translateY(-50%); font-size:72px; opacity:0.12; pointer-events:none; }
+.hero h1 { font-family:'Baloo 2',Arial,cursive; font-size:clamp(17px,4vw,24px); font-weight:800; line-height:1.35; margin-bottom:8px; }
+.hero h1 span { color:var(--gold); }
+.hero p { opacity:0.82; font-size:13px; line-height:1.7; }
+
+/* SECTION HEADING */
+.sh { font-family:'Baloo 2',Arial,cursive; font-size:19px; font-weight:800; color:var(--navy); margin:22px 0 14px; padding-left:13px; border-left:5px solid var(--saffron); }
+
+/* CARDS GRID */
+.cards-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:14px; margin-bottom:18px; }
+.info-card { background:#fff; border-radius:var(--radius); padding:18px; box-shadow:var(--card-shadow); border-top:4px solid var(--saffron); transition:transform 0.2s,box-shadow 0.2s; }
+.info-card:hover { transform:translateY(-3px); box-shadow:0 7px 24px rgba(0,0,0,0.15); }
+.card-icon { font-size:26px; margin-bottom:9px; display:block; }
+.card-title { font-family:'Baloo 2',Arial,cursive; font-size:15px; font-weight:700; color:var(--navy); margin-bottom:9px; }
+.card-points { list-style:none; }
+.card-points li { font-size:13px; color:#3a3a3a; padding:4px 0 4px 17px; position:relative; line-height:1.5; border-bottom:1px solid #f0f0f0; }
+.card-points li:last-child { border-bottom:none; }
+.card-points li::before { content:'▸'; position:absolute; left:0; color:var(--saffron); font-size:11px; top:5px; }
+
+/* TABLE */
+.table-wrap { overflow-x:auto; border-radius:12px; box-shadow:var(--card-shadow); margin-bottom:18px; }
+table { width:100%; border-collapse:collapse; background:#fff; font-size:13px; }
+thead tr { background:var(--navy); color:#fff; }
+thead th { padding:12px 14px; text-align:left; font-family:'Baloo 2',Arial,cursive; font-size:13px; }
+tbody tr:nth-child(even) { background:#f7f7f7; }
+tbody td { padding:11px 14px; border-bottom:1px solid #eee; }
+
+/* FORMULA */
+.formula-box { background:linear-gradient(135deg,#1a237e,#283593); color:#fff; border-radius:11px; padding:14px 18px; margin:14px 0; font-family:'Baloo 2',Arial,cursive; font-size:14px; font-weight:600; text-align:center; }
+.formula-box span { color:var(--gold); }
+
+/* BADGES */
+.badge { display:inline-block; padding:2px 9px; border-radius:10px; font-size:10px; font-weight:700; margin-right:3px; }
+.badge-imp { background:#fce4ec; color:#b71c1c; }
+.badge-board { background:#e3f2fd; color:#0d47a1; }
+
+/* PEOPLE CHIPS */
+.people-wrap { display:flex; flex-wrap:wrap; gap:9px; }
+.chip { background:#e8f4fd; color:var(--blue); border-radius:8px; padding:7px 13px; font-size:13px; font-weight:600; }
+
+/* TIMELINE */
+.timeline { position:relative; padding-left:28px; }
+.timeline::before { content:''; position:absolute; left:9px; top:0; bottom:0; width:3px; background:linear-gradient(to bottom,var(--saffron),var(--green)); border-radius:2px; }
+.tl-item { position:relative; margin-bottom:18px; background:#fff; border-radius:11px; padding:13px 16px; box-shadow:0 2px 9px rgba(0,0,0,0.07); }
+.tl-item::before { content:''; position:absolute; left:-24px; top:16px; width:13px; height:13px; background:var(--saffron); border-radius:50%; border:3px solid #fff; box-shadow:0 0 0 2px var(--saffron); }
+.tl-year { font-family:'Baloo 2',Arial,cursive; font-size:14px; font-weight:800; color:var(--saffron); }
+.tl-text { font-size:13px; color:#444; margin-top:4px; line-height:1.55; }
+
+/* ======= MCQ SECTION ======= */
+.mcq-header { background:linear-gradient(135deg,#0B1E35,#1a3a5c); color:#fff; border-radius:var(--radius); padding:22px 24px; margin-bottom:18px; text-align:center; }
+.mcq-header h2 { font-family:'Baloo 2',Arial,cursive; font-size:21px; font-weight:800; margin-bottom:6px; }
+.mcq-header h2 span { color:var(--gold); }
+.mcq-header p { opacity:0.75; font-size:13px; }
+
+/* FILTER BAR */
+.filter-bar { display:flex; gap:9px; flex-wrap:wrap; margin-bottom:18px; align-items:center; }
+.filter-btn { padding:7px 16px; border-radius:18px; border:2px solid var(--navy); background:#fff; color:var(--navy); font-family:'Baloo 2',Arial,cursive; font-size:12px; font-weight:700; cursor:pointer; transition:all 0.2s; }
+.filter-btn:hover, .filter-btn.active { background:var(--navy); color:#fff; }
+.filter-btn.f-active { background:var(--saffron) !important; border-color:var(--saffron) !important; color:#fff !important; }
+
+/* PROGRESS BAR */
+.mcq-progress { background:#fff; border-radius:11px; padding:13px 18px; box-shadow:var(--card-shadow); margin-bottom:18px; display:flex; gap:18px; flex-wrap:wrap; align-items:center; }
+.ps { text-align:center; min-width:52px; }
+.ps .num { font-family:'Baloo 2',Arial,cursive; font-size:20px; font-weight:800; }
+.ps .lbl { font-size:10px; color:#777; }
+.ps .n-blue { color:var(--blue); }
+.ps .n-green { color:var(--green); }
+.ps .n-red { color:#d32f2f; }
+.ps .n-orange { color:var(--saffron); }
+.pb-wrap { flex:1; min-width:130px; }
+.pb-bar { height:9px; background:#e0e0e0; border-radius:5px; overflow:hidden; margin-top:4px; }
+.pb-fill { height:100%; background:linear-gradient(to right,var(--saffron),var(--gold)); border-radius:5px; transition:width 0.5s ease; width:0%; }
+
+/* QUESTION CARD */
+.qcard { background:#fff; border-radius:var(--radius); padding:20px; box-shadow:var(--card-shadow); margin-bottom:14px; border-left:5px solid var(--blue); transition:border-color 0.3s; }
+.qcard.ans-correct { border-left-color:var(--green); }
+.qcard.ans-wrong { border-left-color:#d32f2f; }
+.q-meta { display:flex; gap:7px; margin-bottom:9px; flex-wrap:wrap; align-items:center; }
+.q-num { background:var(--navy); color:#fff; border-radius:5px; padding:2px 9px; font-size:11px; font-weight:700; font-family:'Baloo 2',Arial,cursive; }
+.q-tag { background:#eef4ff; color:var(--blue); border-radius:18px; padding:2px 9px; font-size:10px; font-weight:600; }
+.q-diff { border-radius:18px; padding:2px 9px; font-size:10px; font-weight:700; }
+.d-easy { background:#e8f5e9; color:#2e7d32; }
+.d-medium { background:#fff8e1; color:#e65100; }
+.d-hard { background:#fce4ec; color:#c62828; }
+.d-board { background:#e8eaf6; color:#3949ab; }
+.q-text { font-size:14px; font-weight:600; color:var(--navy); margin-bottom:13px; line-height:1.65; }
+.opts { list-style:none; display:grid; gap:7px; }
+.opt { padding:9px 14px; border:2px solid #e0e0e0; border-radius:9px; cursor:pointer; font-size:13px; transition:all 0.2s; display:flex; align-items:center; gap:9px; user-select:none; line-height:1.4; }
+.opt:hover:not(.disabled) { border-color:var(--blue); background:#eef4ff; }
+.opt.correct { border-color:var(--green); background:#e8f5e9; color:#1b5e20; font-weight:600; }
+.opt.wrong { border-color:#d32f2f; background:#fce4ec; color:#b71c1c; }
+.opt.disabled { cursor:not-allowed; }
+.opt-ltr { width:22px; height:22px; border-radius:50%; background:#f0f0f0; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; flex-shrink:0; }
+.opt.correct .opt-ltr { background:var(--green); color:#fff; }
+.opt.wrong .opt-ltr { background:#d32f2f; color:#fff; }
+.exp { margin-top:11px; padding:11px 13px; background:#f0f7ff; border-radius:9px; font-size:12px; color:#1255A1; border-left:4px solid var(--blue); display:none; line-height:1.65; }
+.exp.show { display:block; }
+.exp strong { color:var(--navy); }
+
+/* RESULT */
+.result-panel { background:#fff; border-radius:var(--radius); padding:26px 24px; box-shadow:var(--card-shadow); text-align:center; margin-bottom:18px; display:none; }
+.result-panel.show { display:block; animation:fadeUp 0.5s ease forwards; }
+.res-score { font-family:'Baloo 2',Arial,cursive; font-size:56px; font-weight:800; margin:8px 0; }
+.res-grade { font-family:'Baloo 2',Arial,cursive; font-size:20px; font-weight:700; padding:7px 22px; border-radius:28px; display:inline-block; margin:8px 0; }
+.ga { background:#e8f5e9; color:var(--green); }
+.gb { background:#e3f2fd; color:var(--blue); }
+.gc { background:#fff8e1; color:#e65100; }
+.gd { background:#fce4ec; color:#c62828; }
+.res-stats { display:flex; justify-content:center; gap:18px; flex-wrap:wrap; margin:18px 0; }
+.rsb { background:#f8f9fa; border-radius:10px; padding:13px 18px; min-width:80px; }
+.rsb .big { font-family:'Baloo 2',Arial,cursive; font-size:24px; font-weight:800; }
+.rsb .sml { font-size:11px; color:#666; margin-top:2px; }
+.gt { color:var(--green); } .rt { color:#d32f2f; } .bt { color:var(--blue); } .ot { color:var(--saffron); }
+.res-msg { font-size:14px; line-height:1.65; color:#555; max-width:480px; margin:0 auto 18px; }
+
+/* ANALYSIS */
+.analysis-sec { background:#fff; border-radius:var(--radius); padding:22px; box-shadow:var(--card-shadow); margin-bottom:18px; display:none; }
+.analysis-sec.show { display:block; }
+.analysis-sec h3 { font-family:'Baloo 2',Arial,cursive; font-size:17px; font-weight:700; margin-bottom:15px; color:var(--navy); }
+.trow { display:flex; align-items:center; gap:9px; margin-bottom:11px; flex-wrap:wrap; }
+.tname { font-size:12px; min-width:150px; color:var(--navy); font-weight:600; }
+.tbar-w { flex:1; min-width:90px; }
+.tbar { height:16px; background:#eee; border-radius:8px; overflow:hidden; }
+.tfill { height:100%; border-radius:8px; transition:width 1s ease; width:0%; }
+.fg { background:linear-gradient(to right,#0A7A00,#4caf50); }
+.fo { background:linear-gradient(to right,var(--saffron),var(--gold)); }
+.fr { background:linear-gradient(to right,#d32f2f,#ef5350); }
+.tpct { font-family:'Baloo 2',Arial,cursive; font-size:13px; font-weight:700; min-width:36px; text-align:right; }
+
+/* BUTTONS */
+.btn { padding:11px 24px; border-radius:9px; border:none; font-family:'Baloo 2',Arial,cursive; font-size:14px; font-weight:700; cursor:pointer; transition:all 0.2s; display:inline-flex; align-items:center; gap:7px; }
+.btn-p { background:linear-gradient(135deg,var(--saffron),var(--deep-saffron)); color:#fff; box-shadow:0 4px 13px rgba(232,89,12,0.35); }
+.btn-p:hover { transform:translateY(-2px); box-shadow:0 6px 18px rgba(232,89,12,0.45); }
+.btn-s { background:var(--navy); color:#fff; }
+.btn-s:hover { background:#1a3a5c; }
+.btn-g { background:linear-gradient(135deg,var(--green),var(--deep-green)); color:#fff; box-shadow:0 4px 13px rgba(10,122,0,0.25); }
+.btn-row { display:flex; gap:10px; flex-wrap:wrap; margin:18px 0; align-items:center; }
+
+/* FLASHCARDS */
+.fc-wrap { perspective:1000px; margin-bottom:16px; }
+.flashcard { width:100%; min-height:180px; position:relative; transform-style:preserve-3d; transition:transform 0.55s; cursor:pointer; }
+.flashcard.flipped { transform:rotateY(180deg); }
+.fc-front, .fc-back { position:absolute; width:100%; min-height:180px; backface-visibility:hidden; -webkit-backface-visibility:hidden; border-radius:var(--radius); padding:26px 24px; display:flex; align-items:center; justify-content:center; text-align:center; flex-direction:column; }
+.fc-front { background:linear-gradient(135deg,#0B1E35,#1a3a5c); color:#fff; }
+.fc-back { background:linear-gradient(135deg,var(--green),var(--deep-green)); color:#fff; transform:rotateY(180deg); }
+.fc-front h3 { font-family:'Baloo 2',Arial,cursive; font-size:17px; font-weight:700; margin-bottom:10px; }
+.fc-back h3 { font-family:'Baloo 2',Arial,cursive; font-size:15px; font-weight:700; margin-bottom:8px; }
+.fc-front p, .fc-back p { font-size:13px; opacity:0.88; line-height:1.6; }
+.fc-hint { font-size:11px; opacity:0.55; margin-top:10px; }
+/* Fix: height placeholder so card doesn't collapse */
+.fc-placeholder { width:100%; min-height:180px; pointer-events:none; visibility:hidden; }
+.fc-nav { display:flex; gap:10px; align-items:center; justify-content:center; margin-bottom:16px; }
+.fc-ctr { font-family:'Baloo 2',Arial,cursive; font-size:15px; font-weight:700; color:var(--navy); }
+
+/* KEY POINTS BOXES */
+.kp-box { background:#fff; border-radius:11px; padding:14px 18px; box-shadow:var(--card-shadow); display:flex; gap:12px; align-items:flex-start; margin-bottom:11px; }
+.kp-box .kp-icon { font-size:22px; flex-shrink:0; }
+.kp-box .kp-head { font-weight:700; font-size:13px; color:var(--navy); margin-bottom:4px; }
+.kp-box .kp-body { font-size:13px; color:#444; line-height:1.6; }
+
+/* TOAST */
+.toast { position:fixed; bottom:22px; left:50%; transform:translateX(-50%) translateY(90px); background:var(--navy); color:#fff; padding:11px 22px; border-radius:28px; font-size:13px; font-weight:600; z-index:999; transition:transform 0.3s; pointer-events:none; white-space:nowrap; max-width:92vw; text-align:center; }
+.toast.show { transform:translateX(-50%) translateY(0); }
+
+/* SCROLL TOP */
+.scroll-top { position:fixed; bottom:72px; right:16px; width:42px; height:42px; background:var(--saffron); color:#fff; border-radius:50%; border:none; font-size:17px; cursor:pointer; box-shadow:0 3px 10px rgba(0,0,0,0.2); z-index:90; display:none; align-items:center; justify-content:center; }
+.scroll-top.show { display:flex; }
+
+/* ANIMATIONS */
+@keyframes fadeUp { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:translateY(0); } }
+
+/* RESPONSIVE */
+@media(max-width:560px) {
+  .section { padding:10px; }
+  .hdr { padding:9px 12px; }
+  .cards-grid { grid-template-columns:1fr; }
+  .res-score { font-size:42px; }
+  .fc-front h3, .fc-back h3 { font-size:15px; }
+}
+
+/* IMPORTANT NOTE BOX */
+.note-box { background:linear-gradient(135deg,#fff8e1,#fffde7); border:2px solid var(--gold); border-radius:11px; padding:14px 18px; margin-bottom:14px; font-size:13px; line-height:1.7; color:#3e2800; }
+.note-box strong { color:var(--saffron); }
+
+/* SCORE CIRCLE */
+.score-circle { width:110px; height:110px; border-radius:50%; border:7px solid #e0e0e0; display:flex; align-items:center; justify-content:center; flex-direction:column; margin:0 auto 12px; position:relative; }
+.score-circle .sc-num { font-family:'Baloo 2',Arial,cursive; font-size:22px; font-weight:800; color:var(--navy); }
+.score-circle .sc-lbl { font-size:10px; color:#888; }
+</style>
+</head>
+<body>
+
+<div class="toast" id="toast"></div>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="tricolor"></div>
+  <div class="hdr">
+    <div>
+      <div class="hdr-title">🏛️ Indian <span>Economic Development</span></div>
+      <div class="hdr-sub">Chapter 1 • Class 12 CBSE • 75+ MCQs • Board Exam Ready 2026</div>
+    </div>
+    <div class="hdr-badge">📚 Class XII</div>
+  </div>
+  <div class="nav-tabs">
+    <button class="tab-btn active" onclick="showTab('notes')">📖 Notes</button>
+    <button class="tab-btn" onclick="showTab('mcq')">✏️ MCQ Test</button>
+    <button class="tab-btn" onclick="showTab('flashcards')">🃏 Flashcards</button>
+    <button class="tab-btn" onclick="showTab('keypoints')">⭐ Key Points</button>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!--  NOTES SECTION -->
+<!-- ============================================================ -->
+<div class="section active" id="notes">
+
+<div class="hero">
+  <h1>Indian Economy on the <span>Eve of Independence</span></h1>
+  <p>Azaadi se pehle Bharat ki arthvyavastha kaisi thi? British rule ne kya tabahi ki? Poora chapter simple Hindi-English mein — Board exam ke liye 100% ready!</p>
+</div>
+
+<div class="note-box">
+  <strong>⚠️ Exam Tip:</strong> Is chapter se har saal MCQ, 3-mark aur 4-mark dono types ke questions aate hain. Per capita income ₹230, 80% agriculture dependence, aur 5 national income estimators — ye teen cheezein zaroor yaad rakhein!
+</div>
+
+<div class="sh">1.1 Overall Features of Indian Economy — Eve of Independence</div>
+
+<div class="cards-grid">
+  <div class="info-card" style="border-top-color:var(--saffron)">
+    <span class="card-icon">📉</span>
+    <div class="card-title">(a) Stagnant Economy</div>
+    <ul class="card-points">
+      <li>Economy mein little or no growth in income</li>
+      <li>National income ka sarkari andaaza kabhi nahi lagaya gaya</li>
+      <li>20th century ke first half mein real output growth &lt; 2%</li>
+      <li>Per capita output growth — sirf <strong>0.5% per year</strong></li>
+      <li>Epidemics aur famines baar baar hote the</li>
+      <li>Standard of living miserably low tha</li>
+    </ul>
+  </div>
+  <div class="info-card" style="border-top-color:var(--blue)">
+    <span class="card-icon">💸</span>
+    <div class="card-title">(b) Backward Economy</div>
+    <ul class="card-points">
+      <li>1947-48 mein per capita income sirf <strong>₹230</strong></li>
+      <li>Very low per capita income = backward economy</li>
+      <li>Log khana, kapda, makaan se vanchit the</li>
+      <li>Widespread unemployment tha</li>
+      <li>Handicraft industries ke naash se poverty badhaa</li>
+    </ul>
+  </div>
+  <div class="info-card" style="border-top-color:var(--green)">
+    <span class="card-icon">🌾</span>
+    <div class="card-title">(c) Dominance of Agriculture</div>
+    <ul class="card-points">
+      <li><strong>~80%</strong> population — directly/indirectly agriculture pe dependent</li>
+      <li><strong>~70%</strong> working population — agriculture mein engaged</li>
+      <li>Famine baar baar hoti thi</li>
+      <li>Output per acre (productivity) bahut kam tha</li>
+      <li>Food shortage aur starvation deaths common thi</li>
+    </ul>
+  </div>
+  <div class="info-card" style="border-top-color:#c62828">
+    <span class="card-icon">🏭</span>
+    <div class="card-title">(d) Bleak Industrialisation</div>
+    <ul class="card-points">
+      <li>Industrial development bahut dheema tha</li>
+      <li>British policies ne Indian handicrafts destroy kiye</li>
+      <li>Modern industries ki growth extremely slow thi</li>
+      <li>Machinery aur capital goods import karne padte the</li>
+      <li>Small-scale industries buri tarah se tabaah ho gayi</li>
+    </ul>
+  </div>
+  <div class="info-card" style="border-top-color:#7b1fa2">
+    <span class="card-icon">🌍</span>
+    <div class="card-title">(e) Heavy Dependence on Imports</div>
+    <ul class="card-points">
+      <li>Machinery, medicines, kerosene oil, chemicals import hote the</li>
+      <li>Defence equipment bhi bahar se aata tha</li>
+      <li>Indian industries etni kamzor ki ye sab bana nahi sakti thi</li>
+      <li>Country heavily dependent on foreign imports thi</li>
+    </ul>
+  </div>
+  <div class="info-card" style="border-top-color:#00838f">
+    <span class="card-icon">🏙️</span>
+    <div class="card-title">(f) Limited Urbanisation</div>
+    <ul class="card-points">
+      <li>Zyaadatar log gaanv mein rehte the</li>
+      <li>1948 mein sirf <strong>~15%</strong> urban population</li>
+      <li>Agriculture ke bahar employment bahut kam thi</li>
+      <li>Urban facilities bahut limited thi</li>
+    </ul>
+  </div>
+  <div class="info-card" style="border-top-color:#e65100">
+    <span class="card-icon">🏚️</span>
+    <div class="card-title">(g) Semi-Feudal Economy</div>
+    <ul class="card-points">
+      <li>Zamindars ke paas zameen — farmers mazloom</li>
+      <li>Neither wholly capitalist nor wholly feudal</li>
+      <li>Feudalistic mode of production dominant tha</li>
+      <li>Purane tarike — low productivity</li>
+      <li>Farmers ke paas koi rights nahi the</li>
+    </ul>
+  </div>
+</div>
+
+<div class="sh">1.1.1 India Before British Rule</div>
+<div class="cards-grid">
+  <div class="info-card" style="border-top-color:var(--gold)">
+    <span class="card-icon">🪙</span>
+    <div class="card-title">Samridh Bharat (Pre-British Era)</div>
+    <ul class="card-points">
+      <li>India was a <strong>vibrant and prosperous</strong> country</li>
+      <li>Agriculture mukhya peshaa — gaanv self-sufficient</li>
+      <li>Handicrafts aur cotton textiles — world-famous</li>
+      <li>Silk, metal products, fine craftsmanship globally known</li>
+      <li>Indian goods puri duniya mein export hote the</li>
+      <li><strong>Sona-chandi</strong> trade ke zariye India aata tha</li>
+    </ul>
+  </div>
+</div>
+
+<div class="sh">1.1.2 Exploitation &amp; Transformation During British Rule</div>
+<div class="cards-grid">
+  <div class="info-card" style="border-top-color:#d32f2f">
+    <span class="card-icon">⚙️</span>
+    <div class="card-title">(i) Supply Side Exploitation</div>
+    <ul class="card-points">
+      <li>India = raw material ka supplier for Britain</li>
+      <li>Cotton, jute, indigo etc. export hote the</li>
+      <li>British industries ne Indian raw material use kiya</li>
+      <li>India ki resources Britain ke liye extract ki gayi</li>
+    </ul>
+  </div>
+  <div class="info-card" style="border-top-color:#7b1fa2">
+    <span class="card-icon">🛒</span>
+    <div class="card-title">(ii) Demand Side Exploitation</div>
+    <ul class="card-points">
+      <li>India bana British finished goods ka market</li>
+      <li>Indians ko British-made goods kharidni padte the</li>
+      <li>Indian handicraft industry completely destroyed</li>
+      <li>Indian markets were used as 'demand destination'</li>
+    </ul>
+  </div>
+  <div class="info-card" style="border-top-color:#d32f2f">
+    <span class="card-icon">😔</span>
+    <div class="card-title">Effects on Indian Economy</div>
+    <ul class="card-points">
+      <li>Indian handicraft industries destroyed</li>
+      <li>Farmers heavily taxed + land se ejected</li>
+      <li>Agriculture stopped producing surplus</li>
+      <li>Poverty aur unemployment bahut badhaa</li>
+      <li>Economy became weak, backward, dependent</li>
+      <li>Railways bhi colonial interest ke liye bani — Indian economy ke liye nahi</li>
+    </ul>
+  </div>
+</div>
+
+<div class="sh">1.2 Agricultural Sector on the Eve of Independence</div>
+<div class="cards-grid">
+  <div class="info-card" style="border-top-color:var(--saffron)">
+    <span class="card-icon">📉</span>
+    <div class="card-title">(a) Low Production &amp; Low Productivity</div>
+    <ul class="card-points">
+      <li>Production = total output; Productivity = output per hectare</li>
+      <li>Purane aur primitive farming methods</li>
+      <li>Poor irrigation facilities</li>
+      <li>Modern tools aur technology nahi thi</li>
+      <li>Farmers ke paas invest karne ke paise nahi</li>
+    </ul>
+  </div>
+  <div class="info-card" style="border-top-color:var(--green)">
+    <span class="card-icon">🏗️</span>
+    <div class="card-title">(b) Exploitative Land Settlement</div>
+    <ul class="card-points">
+      <li>Zamindari system — bahut exploitative</li>
+      <li>Zamindars ne farmers se zyaada revenue collect kiya</li>
+      <li>Farmers ko land tenure ki koi security nahi</li>
+      <li>Produce ka bada hissa zamindar + British le lete</li>
+      <li>Farmers ke paas reinvest karne ke liye kuch nahi bachta</li>
+    </ul>
+  </div>
+  <div class="info-card" style="border-top-color:var(--blue)">
+    <span class="card-icon">🌿</span>
+    <div class="card-title">(c) Forced Commercialisation</div>
+    <ul class="card-points">
+      <li>Farmers ko cash crops ugaane par majboor kiya</li>
+      <li>Indigo, cotton, jute — importance di gayi</li>
+      <li>Food crop production neglect hua</li>
+      <li>Farmers ko apna produce low prices pe bechna pada</li>
+      <li>Food shortage aur akaal badhay</li>
+    </ul>
+  </div>
+  <div class="info-card" style="border-top-color:var(--gold)">
+    <span class="card-icon">💧</span>
+    <div class="card-title">(d) Lack of Investment in Infrastructure</div>
+    <ul class="card-points">
+      <li>Irrigation bahut poor tha</li>
+      <li>Transport aur storage facilities inadequate</li>
+      <li>Institutional credit ka koi source nahi</li>
+      <li>British ne agriculture mein invest nahi kiya</li>
+      <li>Little investment by British government in agriculture</li>
+    </ul>
+  </div>
+  <div class="info-card" style="border-top-color:#c62828">
+    <span class="card-icon">👨‍🌾</span>
+    <div class="card-title">(e) Gap Between Owners &amp; Tillers</div>
+    <ul class="card-points">
+      <li>Zamindars (owners) ke paas zameen — tillers kaam karte</li>
+      <li>Farmers ko produce ka chhota hissa milta tha</li>
+      <li>Improve karne ka koi motivation nahi</li>
+      <li>Gulf between owners and tillers of soil</li>
+    </ul>
+  </div>
+  <div class="info-card" style="border-top-color:#7b1fa2">
+    <span class="card-icon">🗺️</span>
+    <div class="card-title">(f) Small &amp; Fragmented Holdings</div>
+    <ul class="card-points">
+      <li>Land holdings bahut chhote aur bikhar hue</li>
+      <li>Small farms = low efficiency</li>
+      <li>Modern methods apply karna mushkil</li>
+      <li>Economies of scale nahi thi</li>
+    </ul>
+  </div>
+  <div class="info-card" style="border-top-color:#00838f">
+    <span class="card-icon">🏠</span>
+    <div class="card-title">(g) Subsistence Outlook</div>
+    <ul class="card-points">
+      <li>Farmers mainly apne liye produce karte the</li>
+      <li>Marketable surplus bahut kam tha</li>
+      <li>Commercial agriculture develop nahi ho saki</li>
+      <li>Farmers produced mainly for self-consumption</li>
+    </ul>
+  </div>
+</div>
+
+<div class="sh">📊 Wheat &amp; Rice Productivity: 1947 vs 2022-23</div>
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr><th>Crop</th><th>Productivity 1947 (kg/hectare)</th><th>Productivity 2022-23 (kg/hectare)</th><th>Production 1947 (lakh tonnes)</th><th>Production 2022-23 (lakh tonnes)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>🌾 Wheat</strong></td><td>660</td><td>3,521</td><td>64</td><td>1,106</td></tr>
+      <tr><td><strong>🍚 Rice</strong></td><td>665</td><td>2,838</td><td>220</td><td>1,358</td></tr>
+    </tbody>
+  </table>
+</div>
+<div class="note-box" style="margin-top:0">
+  <strong>📝 Note:</strong> Wheat productivity 1947 mein <strong>660 kg/hectare</strong> se badh ke 2022-23 mein <strong>3521 kg/hectare</strong> ho gayi — lagbhag 5.3 times increase. Rice productivity nearly 4.2 times increase. Ye Green Revolution aur modern farming ka result hai.
+</div>
+
+<div class="sh">📝 National Income Estimators</div>
+<div style="background:#fff; border-radius:12px; padding:18px; box-shadow:var(--card-shadow); margin-bottom:18px;">
+  <p style="font-size:13px; color:#444; margin-bottom:12px;">British government ne kabhi India ka national income estimate nahi kiya. In notable individuals ne koshish ki:</p>
+  <div class="people-wrap">
+    <div class="chip">👤 Dadabhai Naoroji</div>
+    <div class="chip">👤 William Digby</div>
+    <div class="chip">👤 Findlay Shirras</div>
+    <div class="chip">👤 V.K.R.V. Rao</div>
+    <div class="chip">👤 R.C. Desai</div>
+  </div>
+  <div class="formula-box">Per Capita Income = <span>National Income ÷ Total Population</span></div>
+  <p style="font-size:12px; color:#666; margin-top:8px;">⚠️ Results <strong>conflicting</strong> the — different scholars ke andaaze alag the kyunki reliable data available nahi tha.</p>
+</div>
+
+</div><!-- /notes -->
+
+<!-- ============================================================ -->
+<!--  MCQ TEST SECTION -->
+<!-- ============================================================ -->
+<div class="section" id="mcq">
+
+<div class="mcq-header">
+  <h2>✏️ MCQ Test — <span>Indian Economic Development</span></h2>
+  <p>Chapter 1 | 75 Questions | Board Exam Pattern 2026 | Easy → Hard → Board Style</p>
+</div>
+
+<div class="filter-bar">
+  <button class="filter-btn f-active" id="fb-all" onclick="startTest('all')">🎯 All (75)</button>
+  <button class="filter-btn" id="fb-easy" onclick="startTest('easy')">🟢 Easy (20)</button>
+  <button class="filter-btn" id="fb-medium" onclick="startTest('medium')">🟡 Medium (20)</button>
+  <button class="filter-btn" id="fb-hard" onclick="startTest('hard')">🔴 Hard (20)</button>
+  <button class="filter-btn" id="fb-board" onclick="startTest('board')">📋 Board Style (15)</button>
+</div>
+
+<div class="mcq-progress" id="progressPanel">
+  <div class="ps"><div class="num n-blue" id="totalQ">0</div><div class="lbl">Total</div></div>
+  <div class="ps"><div class="num n-green" id="correctQ">0</div><div class="lbl">Correct</div></div>
+  <div class="ps"><div class="num n-red" id="wrongQ">0</div><div class="lbl">Wrong</div></div>
+  <div class="ps"><div class="num n-orange" id="remainQ">0</div><div class="lbl">Remaining</div></div>
+  <div class="pb-wrap">
+    <div style="font-size:11px; color:#777;">Progress</div>
+    <div class="pb-bar"><div class="pb-fill" id="progressFill"></div></div>
+  </div>
+</div>
+
+<div id="questionsContainer"></div>
+
+<div class="result-panel" id="resultPanel">
+  <div style="font-size:38px; margin-bottom:6px" id="resultEmoji">🎉</div>
+  <h2 style="font-family:'Baloo 2',Arial,cursive; font-size:19px; color:var(--navy); margin-bottom:6px;">Test Khatam Hua!</h2>
+  <div class="res-score" id="scoreDisplay">0/0</div>
+  <div class="res-grade" id="gradeDisplay">—</div>
+  <div class="res-stats">
+    <div class="rsb"><div class="big gt" id="res-correct">0</div><div class="sml">✅ Correct</div></div>
+    <div class="rsb"><div class="big rt" id="res-wrong">0</div><div class="sml">❌ Wrong</div></div>
+    <div class="rsb"><div class="big bt" id="res-total">0</div><div class="sml">📝 Total</div></div>
+    <div class="rsb"><div class="big ot" id="res-pct">0%</div><div class="sml">📊 Score</div></div>
+  </div>
+  <p class="res-msg" id="resultMessage">—</p>
+  <div class="btn-row" style="justify-content:center;">
+    <button class="btn btn-p" onclick="startTest(currentMode)">🔄 Dobara Try Karo</button>
+    <button class="btn btn-s" onclick="showAnalysis()">📊 Analysis Dekho</button>
+  </div>
+</div>
+
+<div class="analysis-sec" id="analysisSection">
+  <h3>📊 Topic-wise Performance Analysis</h3>
+  <div id="topicAnalysis"></div>
+  <div class="btn-row">
+    <button class="btn btn-g" onclick="showTab('notes')">📖 Notes Revise Karo</button>
+    <button class="btn btn-p" onclick="startTest('all')">🎯 Phir Se Test Do</button>
+  </div>
+</div>
+
+</div><!-- /mcq -->
+
+<!-- ============================================================ -->
+<!--  FLASHCARDS SECTION -->
+<!-- ============================================================ -->
+<div class="section" id="flashcards">
+
+<div class="hero">
+  <h1>🃏 Flashcards — <span>Quick Revision</span></h1>
+  <p>Card pe click karo — answer flip hoga! Exam se pehle fast revision ke liye perfect. 20 cards available hain.</p>
+</div>
+
+<div class="fc-wrap">
+  <div class="flashcard" id="flashcard" onclick="flipCard()">
+    <div class="fc-front">
+      <h3 id="fc-question">Loading...</h3>
+      <p class="fc-hint">👆 Click to see answer</p>
+    </div>
+    <div class="fc-back">
+      <h3>✅ Answer</h3>
+      <p id="fc-answer">—</p>
+      <p class="fc-hint">👆 Click to flip back</p>
+    </div>
+  </div>
+  <!-- Height placeholder so layout doesn't collapse -->
+  <div class="fc-placeholder"></div>
+</div>
+
+<div class="fc-nav">
+  <button class="btn btn-s" onclick="prevCard()">◀ Prev</button>
+  <span class="fc-ctr" id="fcCounter">1 / 20</span>
+  <button class="btn btn-p" onclick="nextCard()">Next ▶</button>
+</div>
+
+<div class="btn-row" style="justify-content:center;">
+  <button class="btn btn-g" onclick="shuffleCards()">🔀 Shuffle Karo</button>
+</div>
+
+</div><!-- /flashcards -->
+
+<!-- ============================================================ -->
+<!--  KEY POINTS SECTION -->
+<!-- ============================================================ -->
+<div class="section" id="keypoints">
+
+<div class="hero">
+  <h1>⭐ Key Points — <span>Exam ke liye Zaroori</span></h1>
+  <p>Ye points board exam mein baar baar aate hain. Board 2026 ke liye must-revise material!</p>
+</div>
+
+<div class="sh">📌 Important Stats &amp; Facts (Must Remember)</div>
+
+<div class="kp-box"><div class="kp-icon">💰</div><div><div class="kp-head"><span class="badge badge-imp">IMP</span> Per Capita Income 1947-48</div><div class="kp-body">Sirf <strong>₹230</strong> tha per capita income — iska matlab India ek backward economy thi jahan zyaadatar log bahut garib the.</div></div></div>
+
+<div class="kp-box"><div class="kp-icon">🌾</div><div><div class="kp-head"><span class="badge badge-board">BOARD</span> Agriculture Dependence</div><div class="kp-body"><strong>80%</strong> population agriculture pe dependent. <strong>70%</strong> working population agriculture mein engaged. Lekin famine baar baar aati thi.</div></div></div>
+
+<div class="kp-box"><div class="kp-icon">📈</div><div><div class="kp-head"><span class="badge badge-imp">IMP</span> GDP Growth Rate Pre-Independence</div><div class="kp-body">20th century ke first half mein real output growth <strong>&lt;2%</strong>. Per capita output growth maatr <strong>0.5% per year</strong> — stagnation ka praman.</div></div></div>
+
+<div class="kp-box"><div class="kp-icon">🏙️</div><div><div class="kp-head"><span class="badge badge-board">BOARD</span> Urbanisation 1948</div><div class="kp-body">Sirf <strong>15%</strong> population urban areas mein. Baaki sab gaanv mein — limited urbanisation ka evidence.</div></div></div>
+
+<div class="kp-box"><div class="kp-icon">🎯</div><div><div class="kp-head"><span class="badge badge-imp">IMP</span> British ka Sole Purpose</div><div class="kp-body">India ko <strong>raw material ka supplier</strong> aur British finished goods ka <strong>market</strong> banana. Colonial interest serve karna — Indian development bilkul nahi.</div></div></div>
+
+<div class="kp-box"><div class="kp-icon">👥</div><div><div class="kp-head"><span class="badge badge-board">BOARD</span> 5 National Income Estimators</div><div class="kp-body"><strong>Dadabhai Naoroji, William Digby, Findlay Shirras, V.K.R.V. Rao, R.C. Desai</strong> — British sarkar ne khud kabhi estimate nahi kiya.</div></div></div>
+
+<div class="kp-box"><div class="kp-icon">🌾</div><div><div class="kp-head"><span class="badge badge-imp">IMP</span> Wheat Productivity Comparison</div><div class="kp-body">1947: <strong>660 kg/hectare</strong> → 2022-23: <strong>3521 kg/hectare</strong> (5.3× increase). Rice: 665 → 2838 kg/hectare (4.2× increase).</div></div></div>
+
+<div class="sh">📅 Important Timeline</div>
+<div class="timeline">
+  <div class="tl-item"><div class="tl-year">Before British Rule</div><div class="tl-text">India vibrant aur prosperous tha. Handicrafts, textiles flourishing. Sona-chandi trade ke zariye India aata tha.</div></div>
+  <div class="tl-item"><div class="tl-year">During British Rule (1757–1947)</div><div class="tl-text">Raw material export, finished goods import. Handicraft industries destroyed. Zamindari exploitation. Railways for colonial benefit, not Indian development.</div></div>
+  <div class="tl-item"><div class="tl-year">1947-48 (Independence)</div><div class="tl-text">Per capita income = ₹230. 80% agriculture dependent. Economy backward, stagnant, heavily import-dependent.</div></div>
+  <div class="tl-item"><div class="tl-year">2022-23 (Present)</div><div class="tl-text">Wheat productivity: 3521 kg/hectare (vs 660 in 1947). India became 5th largest economy globally. Massive improvement post-Independence.</div></div>
+</div>
+
+<div class="sh">❓ Board Exam Important Questions with Answers</div>
+
+<div style="display:grid; gap:12px; margin-bottom:18px;">
+  <div style="background:#fff; border-radius:11px; padding:15px 18px; box-shadow:var(--card-shadow);">
+    <div style="font-weight:700; font-size:13px; color:var(--saffron); margin-bottom:7px;">Q1. British colonial rule ka sole purpose India mein kya tha?</div>
+    <div style="font-size:13px; color:#444; line-height:1.7;"><strong>Ans:</strong> British rule ka ek hi maqsad tha — India ko (i) raw material supplier banana aur (ii) Indian market ko British finished goods ka destination banana. Ye pure colonial exploitation thi. Railways bhi Indian economy ke liye nahi, colonial interest ke liye bani thi.</div>
+  </div>
+  <div style="background:#fff; border-radius:11px; padding:15px 18px; box-shadow:var(--card-shadow);">
+    <div style="font-weight:700; font-size:13px; color:var(--saffron); margin-bottom:7px;">Q2. Stagnant economy aur Backward economy mein kya antar hai?</div>
+    <div style="font-size:13px; color:#444; line-height:1.7;"><strong>Ans:</strong> Stagnant economy = aisi economy jisme aay mein little or no growth ho (rate ka issue). Backward economy = aisi economy jisme per capita income bahut low ho (level ka issue). 1947 mein India dono tha — income grow nahi rahi thi aur level bhi ₹230 jitna low tha.</div>
+  </div>
+  <div style="background:#fff; border-radius:11px; padding:15px 18px; box-shadow:var(--card-shadow);">
+    <div style="font-weight:700; font-size:13px; color:var(--saffron); margin-bottom:7px;">Q3. Independence ki sandhya pe agriculture ki 4 main features kya thin?</div>
+    <div style="font-size:13px; color:#444; line-height:1.7;"><strong>Ans:</strong> (i) Low production aur productivity — purane methods, poor irrigation. (ii) Exploitative land settlement — Zamindari system. (iii) Forced commercialisation — cash crops ugaane ka dbaav. (iv) Lack of investment in infrastructure — irrigation, storage, credit sab absent. Additional features: small &amp; fragmented holdings, gap between owners &amp; tillers, subsistence outlook.</div>
+  </div>
+  <div style="background:#fff; border-radius:11px; padding:15px 18px; box-shadow:var(--card-shadow);">
+    <div style="font-weight:700; font-size:13px; color:var(--saffron); margin-bottom:7px;">Q4. Colonial exploitation ke do paksh (Supply &amp; Demand) explain karo.</div>
+    <div style="font-size:13px; color:#444; line-height:1.7;"><strong>Ans:</strong> (i) <strong>Supply side</strong> — India British industries ko raw material supply karta tha (cotton, jute, indigo). (ii) <strong>Demand side</strong> — India British finished goods ka market ban gaya. Indians ko British-made goods kharidni padte the. Is dual exploitation ne Indian economy ko hollow kar diya.</div>
+  </div>
+</div>
+
+</div><!-- /keypoints -->
+
+<button class="scroll-top" id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+// ============================================================
+//  ALL 75 MCQ QUESTIONS — VERIFIED ANSWERS
+//  ans = 0-indexed correct option
+// ============================================================
+const allQ = [
+
+// =========== EASY (20) ===========
+{id:1,diff:"easy",topic:"Pre-British India",q:"British rule se pehle India ki economy kaisi thi?",opts:["Backward aur dependent","Vibrant aur prosperous","Industrialised","Import-based"],ans:1,exp:"British rule se pehle India ek samridh desh tha. Handicrafts, agriculture aur trade thriving the. Sona-chandi trade ke zariye India aata tha."},
+{id:2,diff:"easy",topic:"British Exploitation",q:"British colonial rule ka sole purpose India mein kya tha?",opts:["India ka vikas karna","India ko raw material supplier aur British goods ka market banana","Railway infrastructure develop karna","India mein education spread karna"],ans:1,exp:"British ka ek hi maqsad tha — India ko apne industrial goods ka market aur raw material ka source banana. Ye pure colonial exploitation thi, Indian development ke liye bilkul nahi."},
+{id:3,diff:"easy",topic:"Agriculture",q:"Independence ke eve pe kitni % population (directly/indirectly) agriculture pe dependent thi?",opts:["50%","60%","70%","80%"],ans:3,exp:"Approx 80% population directly ya indirectly agriculture pe dependent thi — India ki economy ki dominant feature thi ye."},
+{id:4,diff:"easy",topic:"Key Stats",q:"1947-48 mein India ki per capita income kitni thi?",opts:["₹130","₹230","₹330","₹430"],ans:1,exp:"1947-48 mein per capita income sirf ₹230 thi — iska matlab India ek backward economy tha jahan log bahut garib the."},
+{id:5,diff:"easy",topic:"Agriculture",q:"Independence ke eve pe working population ka kitna % agriculture mein engaged tha?",opts:["50%","60%","70%","80%"],ans:2,exp:"Approx 70% working population agriculture mein engaged tha, jo agriculture ke dominance ko darshata hai."},
+{id:6,diff:"easy",topic:"Urbanisation",q:"1948 mein India ki urban population approximately kitni thi?",opts:["5%","10%","15%","25%"],ans:2,exp:"1948 mein sirf ~15% population urban areas mein rehti thi — limited urbanisation ka praman."},
+{id:7,diff:"easy",topic:"British Exploitation",q:"British rule ke dauran Indian handicraft industry ke saath kya hua?",opts:["Aur zyaada badhaayi gayi","Completely destroy ho gayi","Government ne support kiya","Export zyaada ho gaya"],ans:1,exp:"British policies ne systematically Indian handicraft industry ko destroy kiya — British finished goods Indian market mein aa gaye, demand khatam ho gayi."},
+{id:8,diff:"easy",topic:"Economy Features",q:"Eve of independence pe India ki economy ka major feature kya tha?",opts:["High industrialisation","Stagnant economy with little or no growth","Rapid urbanisation","Strong exports"],ans:1,exp:"India ki economy completely stagnant thi — per capita output growth sirf 0.5% per year tha 20th century ke first half mein."},
+{id:9,diff:"easy",topic:"Agriculture",q:"Independence ke eve pe India ki agriculture ki sabse badi problem kya thi?",opts:["Zyaada production","Low production aur low productivity","Excess irrigation","Too much technology"],ans:1,exp:"Low production aur low productivity — old/primitive methods, poor irrigation, no modern tools. Agriculture backwardness ki main wajah."},
+{id:10,diff:"easy",topic:"National Income",q:"Inme se kaun India ka national income estimate karne wala tha?",opts:["Jawaharlal Nehru","Mahatma Gandhi","Dadabhai Naoroji","Subhas Chandra Bose"],ans:2,exp:"Dadabhai Naoroji, William Digby, Findlay Shirras, V.K.R.V. Rao aur R.C. Desai ne national income estimate karne ki koshish ki. Political leaders ne nahi."},
+{id:11,diff:"easy",topic:"British Exploitation",q:"British rule ke dauran India kya export karta tha?",opts:["Finished goods","Raw materials jaise cotton, jute, indigo","Machinery","Medicines"],ans:1,exp:"India British industries ko raw materials supply karta tha — cotton, jute, indigo etc. Ye supply side exploitation thi."},
+{id:12,diff:"easy",topic:"Economy Features",q:"'Backward Economy' ki definition kya hai?",opts:["High per capita income wali economy","Very low per capita income wali economy","Export-driven economy","Industrially advanced economy"],ans:1,exp:"Backward economy = bahut low per capita income wali economy. 1947-48 mein India ka per capita income sirf ₹230 tha."},
+{id:13,diff:"easy",topic:"Agriculture",q:"'Subsistence farming' mein farmer kiske liye produce karta hai?",opts:["Export ke liye","Market mein bechne ke liye","Khud apni consumption ke liye","British ke liye"],ans:2,exp:"Subsistence farming mein farmers mainly apni consumption ke liye produce karte hain — marketable surplus bahut kam hota hai."},
+{id:14,diff:"easy",topic:"Pre-British India",q:"Pre-British India mein sona-chandi India mein kaise aata tha?",opts:["Mining se","Trade ke zariye exports ke badle","British loans se","Foreign aid se"],ans:1,exp:"Pre-British India mein Indian goods (handicrafts, textiles) puri duniya mein export hote the, aur sona-chandi badle mein India aata tha — trade surplus tha."},
+{id:15,diff:"easy",topic:"Economy Features",q:"Eve of independence pe India ki economy ko kaunsa term describe karta hai?",opts:["Capitalist economy","Socialist economy","Colonial and dependent economy","Mixed economy"],ans:2,exp:"Independence ke eve pe India ki economy colonial exploitation ki wajah se dependent thi — British ke interests ke liye operate karti thi, Indian development ke liye nahi."},
+{id:16,diff:"easy",topic:"British Exploitation",q:"British industrial policy ka Indian handicrafts pe kya asar pada?",opts:["Handicrafts flourish hue","Handicrafts globally expand hue","Handicrafts completely destroyed — demand khatam ho gayi","Handicrafts export increase hua"],ans:2,exp:"British ne systematically Indian handicrafts destroy kiye — Indian market British finished goods se flood hua, discrimination policies, demand completely khatam ho gayi."},
+{id:17,diff:"easy",topic:"Key Stats",q:"Wheat ki productivity 1947 mein kitni thi?",opts:["460 kg/hectare","560 kg/hectare","660 kg/hectare","760 kg/hectare"],ans:2,exp:"1947 mein wheat ki productivity 660 kg/hectare thi jo 2022-23 mein badh ke 3521 kg/hectare ho gayi — approximately 5.3 times increase."},
+{id:18,diff:"easy",topic:"Key Stats",q:"Rice ki productivity 1947 mein kitni thi?",opts:["565 kg/hectare","665 kg/hectare","765 kg/hectare","865 kg/hectare"],ans:1,exp:"1947 mein rice ki productivity 665 kg/hectare thi jo 2022-23 mein 2838 kg/hectare ho gayi — approximately 4.2 times increase."},
+{id:19,diff:"easy",topic:"Economy Features",q:"Independence ke eve pe India mein kaunsi cheezein import hoti thi?",opts:["Rice aur wheat","Machinery, medicines, kerosene oil, chemicals","Cotton aur jute","Silver aur gold"],ans:1,exp:"India heavily imports pe dependent tha — machinery, medicines, kerosene oil, chemicals, aur defence equipment. Indian industries itni weak thi ki ye produce nahi kar sakti."},
+{id:20,diff:"easy",topic:"Agriculture",q:"'Zamindari system' kya tha?",opts:["Ek system jisme farmers ke paas zameen thi","Ek exploitative land system jisme zamindaar land control karte aur farmers exploit hote the","Ek modern farming system","Ek cooperative farming system"],ans:1,exp:"Zamindari system mein zamindaar land control karte the, farmers exploit hote the — high land revenue, no tenure security, little incentive for improvement."},
+
+// =========== MEDIUM (20) ===========
+{id:21,diff:"medium",topic:"Economy Features",q:"Stagnant economy aur backward economy mein kya antar hai?",opts:["Dono bilkul same hain","Stagnant = no growth in income (rate issue); Backward = very low per capita income (level issue)","Backward = no growth; Stagnant = low income","Stagnant = industrial problem; Backward = only agricultural problem"],ans:1,exp:"Stagnant economy = little or no growth in income (process ka issue). Backward economy = very low per capita income (level ka issue). India 1947 mein dono tha — income grow nahi rahi thi aur level ₹230 jitna low tha."},
+{id:22,diff:"medium",topic:"British Exploitation",q:"Colonial exploitation ke 'demand side' aspect se kya matlab tha?",opts:["India ne raw materials export kiye","India British finished goods ka market ban gaya","Indian agriculture improve hua","Indian industries developed huin"],ans:1,exp:"Demand side pe — India British finished goods ka market ban gaya. Indians ko British-made goods kharidni padte the, jo Indian industries ke liye completely devastating tha."},
+{id:23,diff:"medium",topic:"Agriculture",q:"'Forced Commercialisation of Agriculture' se kya matlab tha?",opts:["Farmers ko food crops ugaane ki freedom di gayi","Farmers ko cash crops (indigo, cotton, jute) ugaane par majboor kiya gaya","Agricultural exports band kiye gaye","Modern machinery import ki gayi"],ans:1,exp:"British ne farmers ko cash crops ugaane par majboor kiya — indigo, cotton, jute — jisse food crop production neglect hua, food shortage badhaa."},
+{id:24,diff:"medium",topic:"Zamindari",q:"'Gap between Owners and Tillers' ka kya matlab tha?",opts:["Owners aur tillers dono happy the","Zamindars zameen ke malik the, farmers sirf kaam karte, produce ka chhota hissa milta tha","Farmers ne zameen khareedi thi","Zamindars khud kheti karte the"],ans:1,exp:"Zamindars (owners) ke paas zameen thi, tillers (farmers) kaam karte. Farmers ko produce ka bahut chhota hissa milta — koi motivation nahi tha improve karne ka."},
+{id:25,diff:"medium",topic:"Industrial",q:"Eve of independence pe India ki industrial development kaisi thi?",opts:["Rapid aur strong","Bleak aur poor","Export-oriented aur efficient","Self-sufficient"],ans:1,exp:"Bleak industrialisation — industrial development bahut poor tha. British ne Indian handicrafts destroy kiye, modern industries ki growth extremely slow thi, machinery import karni padti thi."},
+{id:26,diff:"medium",topic:"Economy Features",q:"Eve of independence pe India ki economy ko 'semi-feudal' kyun kehte hain?",opts:["Kyunki industries dominant thi","Kyunki zamindaaron ka land pe control tha aur farmers exploit hote the — neither wholly capitalist nor feudal","Kyunki export zyaada tha","Kyunki markets free the"],ans:1,exp:"Semi-feudal kyunki zamindaaron ke paas land control tha, farmers dependent aur exploited the. Market forces bhi thi (trade) lekin feudal land relationships dominant thi."},
+{id:27,diff:"medium",topic:"Key Stats",q:"20th century ke first half mein India ki per capita output growth kitni thi?",opts:["2% per year","1% per year","0.5% per year","3% per year"],ans:2,exp:"Per capita output growth sirf 0.5% per year thi — bahut hi low, jo complete stagnation ko darshata hai."},
+{id:28,diff:"medium",topic:"Agriculture",q:"'Small and Fragmented Holdings' ki problem agriculture development ke liye kyun critical thi?",opts:["Zyaada zameen = zyaada production","Chhote aur bikhar hue khet = low efficiency, modern methods apply karna mushkil, economies of scale nahi","Koi real problem nahi thi","Zamindars ne zyaada zameen li isliye problem aai"],ans:1,exp:"Chhoti aur bikhari zameen mein modern machinery use nahi ho sakti, irrigation efficiently distribute nahi ho sakti, investment economically viable nahi hoti — structural barrier tha agricultural development ke liye."},
+{id:29,diff:"medium",topic:"British Exploitation",q:"British rule ke dauran India mein railways kyun banaye gaye?",opts:["Indian economy ko develop karne ke liye","Indian farmers ki help ke liye","Colonial interest serve karne ke liye — raw material move karna, British goods distribute karna","Indian traders ki help ke liye"],ans:2,exp:"Railways colonial interest ke liye bani thi — raw material ports tak pahuanchana aur British goods puri India mein distribute karna. Indian economy ka development British ka goal nahi tha."},
+{id:30,diff:"medium",topic:"Agriculture",q:"Farmers ke paas agricultural infrastructure mein invest na karne ki wajah kya thi?",opts:["Farmers lazy the","Zamindari exploitation ki wajah se itna tax dena padta tha ki invest karne ke liye kuch nahi bachta","Farmers ko technology pasand nahi thi","Government ne ban lagaaya tha"],ans:1,exp:"Zamindari system mein high land revenue ke baad farmers ke paas kuch nahi bachta. Land tenure ki security bhi nahi thi — to invest kyun karte? British government ne bhi agriculture mein invest nahi kiya."},
+{id:31,diff:"medium",topic:"National Income",q:"British government ne India ka national income estimate kyun nahi kiya?",opts:["Technology nahi thi unke paas","Unhe India ke development mein koi interest nahi tha — sirf exploitation mein","Indians refuse karte the cooperate karne se","Population data available nahi tha"],ans:1,exp:"British ka focus Indian development pe nahi tha — sirf tax collect karna aur raw materials extract karna. Individual scholars ne private effort mein estimate kiya, par results conflicting the."},
+{id:32,diff:"medium",topic:"Agriculture",q:"'Subsistence outlook' in agriculture ka economy pe kya impact tha?",opts:["Agricultural exports badhay","Commerce aur trade develop hua","Marketable surplus na hone se agriculture commercial level pe develop nahi ho saki","Farmers zyaada ameer ho gaye"],ans:2,exp:"Subsistence outlook se marketable surplus bahut kam tha — agriculture commercial level pe develop nahi ho saki, towns develop nahi hue, manufacturing ke liye demand nahi bani."},
+{id:33,diff:"medium",topic:"Economy Features",q:"Eve of independence pe India ki per capita income ke baare mein which statement is TRUE?",opts:["British government ne officially estimate kiya tha","₹230 se zyaada thi","Different scholars ke estimates conflicting the","Ye world average se zyaada thi"],ans:2,exp:"Different scholars (Naoroji, Digby, Shirras, V.K.R.V. Rao, R.C. Desai) ke estimates conflicting the — reliable data available hi nahi tha. British government ne kabhi officially estimate nahi kiya."},
+{id:34,diff:"medium",topic:"British Exploitation",q:"'Deindustrialisation' se kya matlab hai Indian context mein?",opts:["New industries banana","Existing industries ko modernise karna","British rule ke dauran Indian industries (especially handicrafts) ka systematic destruction","Factories export karna"],ans:2,exp:"Deindustrialisation = British policies ki wajah se Indian industries (especially handicrafts) ka systematic destruction. Indian market British goods se flood hua, Indian industries ke paas koi demand nahi bachi."},
+{id:35,diff:"medium",topic:"Agriculture",q:"Forced commercialisation se Indian farmers ko kaunsa double problem face karna pada?",opts:["Zyaada profit aur less work","Food crop neglect (food shortage) + low prices pe cash crops bechna (loss)","Better technology + more income","Export opportunity + government support"],ans:1,exp:"Double problem: (1) Cash crops ugaane se food crops neglect hue — food shortage badhaa. (2) Cash crops low prices pe bechni padte thi — profit nahi hota tha. Ye double exploitation tha."},
+{id:36,diff:"medium",topic:"Economy Features",q:"Eve of independence pe India mein unemployment kyun itna widespread tha?",opts:["Log kaam nahi karna chahte the","Handicraft industries destruction + agricultural backwardness = no alternative employment","Too much industrialisation","Education ki wajah se"],ans:1,exp:"Handicraft industries destroy ho gayi thi, agriculture backward thi, koi modern industry nahi thi — isliye alternative employment ke options hi nahi the. Ye structural unemployment tha."},
+{id:37,diff:"medium",topic:"Agriculture",q:"'Low productivity' aur 'low production' mein kya antar hai?",opts:["Dono same hain","Productivity = output per unit area (per hectare); Production = total output. Low productivity leads to low production","Production = per hectare output; Productivity = total output","Koi antar nahi — sirf alag terms hain"],ans:1,exp:"Production = total output of a crop. Productivity = output per unit area (per hectare). India mein dono low the. Table 1.1 mein dono show kiye gaye hain wheat aur rice ke liye."},
+{id:38,diff:"medium",topic:"Economy Features",q:"Eve of independence pe India economy mein epidemics aur famines kyun recurring phenomenon the?",opts:["Bacteria specifically India mein common tha","Low productivity, food shortage, poverty, poor healthcare — sab interconnected the","Climate bahut kharab tha","British ne poison diya tha"],ans:1,exp:"Low agricultural productivity → food shortage → malnutrition → poor immunity → epidemics easily spread. Poverty ne healthcare access eliminate kar diya. Sab kuch interconnected tha colonial exploitation se."},
+{id:39,diff:"medium",topic:"British Exploitation",q:"Supply side exploitation mein India ne kya supply kiya?",opts:["Finished manufactured goods","Raw materials like cotton, jute, indigo to Britain","Food grains only","Skilled labour"],ans:1,exp:"Supply side: India ne raw materials — cotton, jute, indigo etc. British factories ko supply kiye. Ye materials wahan process ho ke finished goods ban ke wapas India mein bik te the."},
+{id:40,diff:"medium",topic:"Agriculture",q:"Independence ke eve pe agriculture mein institutional credit ki kya situation thi?",opts:["Banks zyaada thi gaanv mein","Microfinance common tha","Institutional credit almost absent tha — farmers moneylenders pe dependent the","Government easy loans deti thi"],ans:2,exp:"Institutional credit (banks, cooperatives) almost nahi tha rural areas mein. Farmers local moneylenders pe dependent the jo exorbitant interest lete the — debt trap aam tha."},
+
+// =========== HARD (20) ===========
+{id:41,diff:"hard",topic:"Economy Features",q:"'Neither wholly capitalist nor wholly feudal' — India ki economy ke liye ye term kyun use kiya gaya?",opts:["Kyunki India sirf agricultural tha","Market forces thi (trade, commerce) lekin feudal land relationships bhi dominant thi — ek mixed semi-feudal structure","Kyunki British control tha","Kyunki industries strong thi"],ans:1,exp:"India mein kuch market elements thi (trade, commerce, moneylending) lekin land pe feudal-like control dominant tha (zamindars, tillers exploitation). Ye na poori tarah capitalist tha na poori tarah feudal — isliye 'semi-feudal'."},
+{id:42,diff:"hard",topic:"Agriculture",q:"Zamindari system ne agricultural productivity ko kaise structurally harm kiya?",opts:["Zamindars modern farming promote karte the","High land revenue → no reinvestment → old methods → low productivity; plus no land tenure security = no incentive","Zamindars irrigation provide karte the","Zamindars loans dete the farmers ko"],ans:1,exp:"Structural harm: (1) High revenue → nothing left to reinvest. (2) No land tenure security → why invest in someone else's land? (3) Large share of produce taken → no surplus. (4) No incentive to improve. Ye cycle continuously low productivity maintain karta tha."},
+{id:43,diff:"hard",topic:"British Exploitation",q:"'Drain of Wealth' theory — ye concept kis se related hai?",opts:["Indian gold mines se","Dadabhai Naoroji's concept — India ki wealth systematically drain ho rahi thi Britain mein without adequate return","British investment in India","Railways ka maintenance cost"],ans:1,exp:"Dadabhai Naoroji ne 'Drain of Wealth' theory di — India se wealth (raw materials, tax revenue, etc.) systematically Britain drain ho rahi thi without adequate return. Ye colonial exploitation ka economic proof tha."},
+{id:44,diff:"hard",topic:"Agriculture",q:"Forced commercialisation ne food security aur agricultural development dono ko kaise simultaneously hurt kiya?",opts:["Food security improve hua aur development bhi","Cash crops pe focus → food crops neglect (food security hit) + low cash crop prices → no profit → no development (agricultural hit)","Sirf food security hit hui","Sirf agricultural development hit hua"],ans:1,exp:"Double hit: (1) Cash crops pe shift → food production giri → famines aur food shortage. (2) Cash crops forced pe low prices bechna = no profit = no investment = no development. Ye simultaneous double damage tha."},
+{id:45,diff:"hard",topic:"Economy Features",q:"'Colonial exploitation has two aspects' — is statement ki critical analysis karo.",opts:["Sirf economic aspects hain","Supply side (resource extraction) aur Demand side (market creation) — dono ne India ko hollow kiya: pehle natural resources liye, phir market bana ke domestically bhi exploit kiya","Sirf political aspects hain","Sirf labour exploitation hai"],ans:1,exp:"Brilliant exploitation design: Supply side pe raw materials extract karo (India ki resources use karo), Demand side pe finished goods bech ke profit karo (India ki purchasing power use karo). India dono taraf se exploit hua — resources diye bhi, goods khareedne ka market bhi bana. Perfect colonial loop."},
+{id:46,diff:"hard",topic:"Agriculture",q:"'Small and Fragmented Holdings' ne agricultural modernisation ke liye kaunsa systemic barrier create kiya?",opts:["Koi real barrier nahi tha","Economic unviability: chhote plots mein machinery ka cost > benefit, irrigation difficult, per unit transaction cost high — modernisation structurally impossible tha","Zamindars ne rokaa tha","British ne ban lagaaya tha"],ans:1,exp:"Systemic barrier: (1) Machinery (tractors etc.) ka cost chhote plot mein recover nahi hota. (2) Irrigation infrastructure fragmented plots mein efficiently install nahi hoti. (3) Economies of scale nahi — per unit cost high. (4) Credit bhi small fragmented land pe milna mushkil. Ye structural trap tha."},
+{id:47,diff:"hard",topic:"Economy Features",q:"Eve of independence pe India ki economy mein stagnation aur backwardness ke liye ultimate root cause kya tha?",opts:["Natural disasters","Indians ki lazy attitude","British colonial policies — systematic resource extraction, market creation, deindustrialisation, zamindari exploitation — sab interconnected tha","Lack of education only"],ans:2,exp:"Root cause: British colonial policies ka systematic package — (1) Raw material extraction (2) Handicraft destruction (3) Market for British goods (4) Zamindari exploitation of agriculture (5) No investment in Indian development (6) Railways for colonial, not Indian benefit. Sab ek coherent system tha India ko exploit karne ka."},
+{id:48,diff:"hard",topic:"National Income",q:"National income estimates ke 'conflicting results' ka kya matlab tha aur ye kyun problematic tha?",opts:["Sab estimates same the","Different scholars ke estimates alag the — reliable data nahi tha, methodology different thi, isliye exact picture clear nahi tha policy making ke liye","British ne wrong data diya","Indians ne cooperate nahi kiya"],ans:1,exp:"Conflicting results problematic: (1) No reliable data collection mechanism tha. (2) Har scholar ki methodology alag — different assumptions. (3) Result: India ki real economic condition ka accurate picture nahi tha. (4) Post-independence planning ke liye reliable baseline nahi mila. Ye British ka failure tha India ke development mein."},
+{id:49,diff:"hard",topic:"Agriculture",q:"'Subsistence outlook' ne Indian agriculture ko commercially non-viable kyun banaya?",opts:["Farmers commercial farming karna nahi chahte the","Low surplus → no marketable output → no commercial infrastructure → no market → prices low → no incentive for commercial farming — negative spiral","Government ne commercial farming ban kiya tha","British ne sirf cash crops allow kiye"],ans:1,exp:"Negative spiral: Low production → little surplus → no marketable output → no market development → no storage/transport investment → even lower prices → even less incentive to produce surplus → circular trap. Commercial agriculture develop hone ke liye sustainable surplus chahiye tha jo tha hi nahi."},
+{id:50,diff:"hard",topic:"British Exploitation",q:"British rule ne Indian economy ko 'dependent' kaise banaya — explain the mechanism?",opts:["India apni marzi se dependent hua","Systematic mechanism: raw material export → Indian industries cannot develop → finished goods import → Indian industries destroyed → no technology development → perpetual dependence created","Sirf political dependence thi","India ne khud dependence choose ki"],ans:1,exp:"Deliberate mechanism: (1) Extract raw materials → Indian manufacturing gets no raw material. (2) Flood market with finished goods → Indian industries die. (3) Destroy handicrafts → no industrial base. (4) No technology transfer → India cannot self-develop. (5) Result: structural permanent dependence — India cannot exist without British goods. Ye deliberate colonial engineering tha."},
+{id:51,diff:"hard",topic:"Economy Features",q:"'Low urbanisation' aur 'limited industrialisation' ke beech causal relationship kya tha?",opts:["Koi relationship nahi tha","Industrialisation drives urbanisation. No industries → no factories → no factory jobs → no reason to move to cities → limited urbanisation. Dono British deindustrialisation ke effects the","Urbanisation drives industrialisation","Climate ki wajah se tha"],ans:1,exp:"Causal chain: British deindustrialisation → no factories/industries → no urban employment opportunities → no migration to cities → limited urbanisation. Dono effects the ek hi cause ke — British industrial policy. Ek na hota to doosra bhi na hota."},
+{id:52,diff:"hard",topic:"Agriculture",q:"'Exploitative land settlement' aur 'forced commercialisation' ke beech kya connection tha?",opts:["Koi connection nahi tha","Land settlement ka high revenue → farmers need cash → forced to grow cash crops to pay revenue → food crops neglect — dono ek hi colonial exploitation system ke parts the","Zamindars ne forced commercialisation kiya","British directly forced farmers"],ans:1,exp:"Connected exploitation: Zamindari high revenue → farmers need cash to pay revenue → sirf cash crops se cash milta tha → farmers forced to grow cash crops → food crops neglect. Dono colonial exploitation system ke integrated parts the — ek ne doosre ko reinforce kiya."},
+{id:53,diff:"hard",topic:"Agriculture",q:"Eve of independence pe agricultural infrastructure mein under-investment ke long-term consequences kya the?",opts:["Koi long-term consequences nahi the","Irrigation absence → rain-dependent farming → famines; No storage → wastage; No credit → moneylender trap; No transport → market access absent — sab ne low productivity cycle perpetuate ki","Infrastructure sab theek tha","British ne good infrastructure banaya tha"],ans:1,exp:"Long-term cascade: (1) No irrigation → monsoon dependent → drought = famine. (2) No storage → post-harvest losses huge. (3) No credit → moneylender exploitation. (4) No transport → can't access better markets. (5) Result: even if farmer wanted to improve, system ne allow nahi kiya. Structural trap tha — individual effort se nikalna possible nahi tha."},
+{id:54,diff:"hard",topic:"Economy Features",q:"India ki pre-independence stagnation ka comparison modern economic indicators se karo.",opts:["India bahut achha tha modern standards se bhi","Real output growth < 2%, per capita 0.5% vs modern India's ~7% GDP growth — gap enormous hai. Stagnation itna severe tha ki decades of growth bhi poverty nahi hata sakti thi","Stagnation normal tha globally","Modern indicators better nahi hain"],ans:1,exp:"Stark comparison: Pre-independence: < 2% real output growth, 0.5% per capita per year. Modern India: ~6-7% GDP growth target, per capita income >₹1,70,000 (2022-23). The compound effect of stagnation was devastating — at 0.5% per capita growth it would take 140 years to double income. Colonial stagnation created multi-generational poverty."},
+{id:55,diff:"hard",topic:"British Exploitation",q:"'Colonial exploitation' ne Indian economy ko structurally transform kyun kiya — reform nahi kiya?",opts:["British ne reform kiya tha","Transformation = reshape economy to serve British needs (extract resources, create market). Reform = improve economy for Indian benefit. British ne sirf transformation kiya, reform nahi — Indian interests unka goal tha hi nahi","Dono same hain","India ne khud transform kiya"],ans:1,exp:"Critical distinction: Transformation means reshaping for external benefit. British ne India ki economy ko restructure kiya — agriculture se cash crops, destroy handicrafts, build railways — but sab colonial interest ke liye. Indian people ki welfare unka goal tha hi nahi. Isi liye poverty badhti gayi despite 'transformation'."},
+{id:56,diff:"hard",topic:"Agriculture",q:"Pre-independence India mein 'recurring famines' ke structural causes kya the?",opts:["Only natural disasters","Structural causes: low agricultural productivity + subsistence farming + forced cash crop commercialisation + no irrigation + no storage + no credit = any drought = mass famine","Only population growth","British ne food export kiya"],ans:1,exp:"Structural famine causes: (1) Low productivity → already minimal food. (2) Cash crops forced → food production reduced. (3) No irrigation → one bad monsoon = total failure. (4) No storage → cannot save surplus in good years. (5) No credit → can't buy food when short. This structural vulnerability meant famines were INEVITABLE, not just bad luck. British policies created this structure."},
+{id:57,diff:"hard",topic:"Economy Features",q:"'Heavy dependence on imports' aur 'bleak industrialisation' — kaun sa pehle tha (cause/effect)?",opts:["Imports heavy hue isliye industries nahi bani","Dono simultaneously hue","Bleak industrialisation (cause) → heavy import dependence (effect). British policies ne industries destroy kiye → India ke paas manufacturing capacity nahi rahi → machinery, medicines etc. import karne ke alawa option nahi tha","Imports ki wajah se industries close huin — sab effect hai"],ans:2,exp:"Causal direction: British policies → deindustrialisation (bleak industrialisation) → no domestic manufacturing capacity → forced import dependence. Agar industries hoti toh imports ki zaroorat nahi hoti. Industrialisation ka absence hi import dependence ka primary cause tha — British destruction of industries ne ye perpetuate kiya."},
+{id:58,diff:"hard",topic:"Agriculture",q:"'Fragmented holdings' problem ko resolve karne ke liye post-independence India ne kya kiya?",opts:["Kuch nahi kiya","Land consolidation (chak bandi), land ceiling laws, zamindari abolition, cooperative farming promotion — sab fragmentation problems address karne ke liye the","Problem abhi bhi same hai","British ne resolve kiya tha"],ans:1,exp:"Post-independence solutions: (1) Zamindari Abolition Acts (1950s). (2) Land Ceiling laws — max land limit. (3) Chak Bandi (land consolidation) — small scattered plots ko consolidate karna. (4) Cooperative farming experiments. (5) Green Revolution technology jo chhote farms mein bhi kaam kare. Pre-independence structural problem ke multiple policy responses zaroorat the."},
+{id:59,diff:"hard",topic:"Economy Features",q:"'Standard of living' miserably low hone ka eve of independence pe multidimensional poverty ke saath kya connection tha?",opts:["Standard of living alag concept hai","Standard of living = multidimensional poverty ka summary: low income + food insecurity + poor housing + no healthcare + unemployment + no education. Eve of independence pe sab dimensions mein India extreme deprivation mein tha","Sirf income tha issue","Housing issue tha sirf"],ans:1,exp:"Multidimensional analysis: (1) Income: ₹230 per capita. (2) Food: recurring famines, malnutrition. (3) Housing: most rural, poor housing. (4) Healthcare: epidemics recurring, no healthcare access. (5) Education: literacy very low. (6) Employment: widespread unemployment. ALL dimensions of human welfare were compromised simultaneously — colonial exploitation ne comprehensive devastation ki thi."},
+{id:60,diff:"hard",topic:"National Income",q:"National income estimates ke 'conflicting results' ka policy implication kya tha?",opts:["Koi implication nahi tha — bas academic debate tha","Without accurate national income data, post-independence planners ke paas reliable baseline nahi tha — planning was harder, resource allocation less efficient, progress measurement difficult","British ne accurate data diya tha","V.K.R.V. Rao ka estimate sab ne accept kiya tha"],ans:1,exp:"Critical policy implication: (1) No accurate baseline → don't know actual starting point. (2) Can't measure progress accurately → hard to know if policies working. (3) Resource allocation difficult → don't know which sectors need most support. (4) International comparisons impossible. This information gap was itself a consequence of colonial neglect — and it handicapped Indian planners for years after independence."},
+
+// =========== BOARD STYLE (15) ===========
+{id:61,diff:"board",topic:"Board Q",q:"(BOARD 2024) 'Stagnant economy' se kya tatparya hai? Ek example dete hue explain karo.",opts:["Ek aisi economy jisme rapid growth ho","Aisi economy jisme aay mein bahut kam ya koi bhi vriddhi na ho; India mein 20th century ke first half mein real output growth < 2% tha","Sirf industrial stagnation","Export mein kami"],ans:1,exp:"Stagnant economy = aisi economy jisme little or no growth in income. India mein 20th century ke first half mein real output growth < 2% tha aur per capita output growth sirf 0.5% per year tha. Standard of living miserably low tha, epidemics aur famines baar baar hote the — ye sab stagnation ke symptoms the."},
+{id:62,diff:"board",topic:"Board Q",q:"(BOARD 2023) Bharat mein British rule ke dauran colonial shoshan ke do paksh kaun se the? Explain karo.",opts:["Agricultural aur Industrial exploitation","Supply side (kaccha maal supplier) aur Demand side (British maal ka bazaar) — dono ne Indian economy ko hollow kar diya","Political aur Economic exploitation","Export aur Import exploitation"],ans:1,exp:"Do paksh: (i) Apoorti paksh (Supply side) — India British industries ko kaccha maal supply karta tha (cotton, jute, indigo etc.). (ii) Maang paksh (Demand side) — India British taiyaar malon ka bazaar ban gaya. Indians ko British-made goods kharidni padte thi. Dono ne milke Indian economy ko completely dependent aur hollow kar diya."},
+{id:63,diff:"board",topic:"Board Q",q:"(BOARD 2022) Independence ki sandhya pe bhumi vyavastha (Land settlement) ke dushprabhav explain karo.",opts:["Zameen ka samaan vitaran hua, koi problem nahi thi","Kisaan zamindaaron ke hath mein kaid — high land revenue, land tenure security nahi, produce ka bada hissa zamindaar lete, reinvestment impossible","Kisaanon ki samridhi badi","Zamindars helpful the"],ans:1,exp:"Dushprabhav: (1) Zyaada land revenue — farmers ke paas invest karne ke liye kuch nahi bachta. (2) Land tenure security nahi — kabhi bhi zameen le sakta tha zamindaar. (3) Produce ka bada hissa zamindaar + British le lete. (4) Improvement ke liye koi incentive nahi. (5) Agriculture productivity permanently low rahi. Ye systematic exploitation tha."},
+{id:64,diff:"board",topic:"Board Q",q:"(BOARD 2023) 'Vyaaparik krishi' (Commercialisation of agriculture) ka kisaanon pe kya prabhav pada?",opts:["Kisaanon ko faayda hua — zyaada profit","Farmers ko cash crops ugaane par majboor kiya, food production ghat gaya, kum kimat pe bechna pada, famines aur poverty badhi","Agriculture develop hua","Export surplus aaya — India rich hua"],ans:1,exp:"Prabhav: (1) Cash crops (indigo, cotton, jute) ugaane par majboor — food crops neglect hue. (2) Food crop production ghat gaya — famines badhay. (3) Cash crops low prices pe forced sale — no profit. (4) Farmers ki poverty aur distress badhi. (5) Agricultural development impossible ho gaya jab food crop production hi struggle mein tha."},
+{id:65,diff:"board",topic:"Board Q",q:"(BOARD 2024) Rashtriya aay andaaz lagaane wale prasiddh vyaktiyon ke naam batao aur British ki bhumika explain karo.",opts:["Gandhi, Nehru, Patel, Ambedkar, Bose","Dadabhai Naoroji, William Digby, Findlay Shirras, V.K.R.V. Rao, R.C. Desai — British sarkar ne kabhi officially estimate nahi kiya","Marx, Keynes, Adam Smith","Only Naoroji ne kiya"],ans:1,exp:"Notable estimators: Dadabhai Naoroji (Drain of Wealth theory bhi di), William Digby, Findlay Shirras, V.K.R.V. Rao, R.C. Desai. British government ne kabhi national/per capita income officially estimate nahi kiya — kyunki unhe Indian welfare se koi interest nahi tha, sirf exploitation mein. Results conflicting the — reliable data available nahi tha."},
+{id:66,diff:"board",topic:"Board Q",q:"(BOARD 2023) Independence ke eve pe India mein agricultural sector ki LOW PRODUCTIVITY ke kya kaaran the?",opts:["Farmers skilled the isliye machines nahi chahiye thi","Primitive methods + poor irrigation + no modern tools + no institutional credit + zamindari exploitation + small fragmented holdings — sab milke low productivity create karte the","Sirf weather ki wajah se tha","Only lack of fertilizers"],ans:1,exp:"Multi-causal low productivity: (1) Primitive farming methods — no scientific techniques. (2) Poor irrigation — monsoon dependent. (3) No modern tools/technology. (4) No institutional credit — moneylenders. (5) Zamindari exploitation — no reinvestment possible. (6) Small fragmented holdings — economies of scale nahi. (7) No investment in infrastructure. Ye sab ek saath kagte the creating permanent low productivity."},
+{id:67,diff:"board",topic:"Board Q",q:"(BOARD 2022) Eve of independence pe Indian economy ke features explain karo (koi 4).",opts:["Industrialised, urbanised, high income, rich","Stagnant economy, backward economy, dominance of agriculture, bleak industrialisation — ye sab colonial exploitation ke result the","Modern, self-sufficient, export-oriented, capitalist","Democratic, planned, developed, urban"],ans:1,exp:"4 main features: (a) Stagnant Economy — little/no income growth, < 2% real output growth. (b) Backward Economy — per capita income ₹230 (1947-48). (c) Dominance of Agriculture — 80% population dependent. (d) Bleak Industrialisation — handicrafts destroyed, no modern industries. Additionally: heavy import dependence, limited urbanisation (~15%), semi-feudal economy. Sab British colonial policies ke consequences the."},
+{id:68,diff:"board",topic:"Board Q",q:"(BOARD 2024) India ek vibrant economy se colonial economy kaise bana — briefly explain karo.",opts:["India ne khud transform kiya","British policies ne systematically: (1) Raw material extract kiya, (2) Indian market create kiya for British goods, (3) Indian handicrafts destroy kiye, (4) Zamindari exploitation kiya — ek samridh desh ko dependent colony bana diya","Natural disasters ki wajah se hua","Population growth ki wajah se tha"],ans:1,exp:"Transformation process: Pre-British: vibrant, prosperous, self-sufficient India. British rule introduced: (1) Raw material extraction → resources drain. (2) Market creation → Indian handicrafts destroyed. (3) Zamindari system → agricultural exploitation. (4) No industrial development → import dependence. (5) Railways for colonial, not Indian benefit. Result: ek baar samridh desh ek poor, backward, stagnant, import-dependent economy ban gaya."},
+{id:69,diff:"board",topic:"Board Q",q:"(BOARD 2023) 'Subsistence outlook' aur 'marketable surplus' ka connection agriculture development se explain karo.",opts:["Subsistence farming se agriculture develop hoti hai","Subsistence = only self-consumption → low/no marketable surplus → no commercial infrastructure development → no price signals → no investment → agriculture stuck in backwardness loop","Marketable surplus unnecessary hai","Commercial farming only India mein possible nahi tha"],ans:1,exp:"Connection: Subsistence farming → minimal surplus → little marketable output → no market development → no storage/transport infrastructure → prices unremunerative → no incentive to produce more → perpetual subsistence. Agricultural development requires marketable surplus to: (1) Generate farmer income for reinvestment. (2) Develop market infrastructure. (3) Create price incentives. Without surplus, development impossible. Pre-independence India was trapped in this cycle."},
+{id:70,diff:"board",topic:"Board Q",q:"(BOARD 2022) Eve of independence pe India mein industrial development 'bleak' kyun tha?",opts:["Indians technology mein interested nahi the","British policies ne systematically deindustrialisation kiya: handicrafts destroy kiye, Indian market mein British goods flood kiye, no capital goods industry allowed, import dependence create ki","Climate ki wajah se tha","Raw materials available nahi the"],ans:1,exp:"Bleak industrialisation ke kaaran: (1) British ne Indian handicraft industry deliberately destroy ki. (2) Indian market British finished goods se flood — domestic industry compete nahi kar sakti. (3) Capital goods (machinery) import pe dependent — industrial base develop nahi ho sakta. (4) No technology transfer by British. (5) Agricultural surplus (needed for industrialisation investment) bhi colonial exploitation mein drain hua. Systematic deindustrialisation tha."},
+{id:71,diff:"board",topic:"Board Q",q:"(BOARD 2023) Per capita income ka formula kya hai aur 1947-48 mein ye kitni thi?",opts:["NI × Total Population; ₹1000","NI ÷ Total Population; ₹230 — jo India ko backward economy mein daalta tha","NI + Population; ₹500","GDP ÷ 100; ₹300"],ans:1,exp:"Per Capita Income = National Income ÷ Total Population. Ye average income per person hoti hai. 1947-48 mein India ki per capita income sirf ₹230 thi — ye bahut low tha aur India ko backward economy ki category mein rakhta tha. Log khana, kapda, aur makaan jaise basic necessities se bhi vanchit the."},
+{id:72,diff:"board",topic:"Board Q",q:"(BOARD 2024) Wheat productivity 1947 se 2022-23 mein kitni badhi aur iska kya significance hai?",opts:["Koi significant change nahi tha","660 kg/hectare (1947) se 3521 kg/hectare (2022-23) — almost 5.3 times increase. Iska significance: Green Revolution success, modern farming techniques, irrigation improvement, seed technology, post-independence agricultural development","Productivity thodi si badhi — 800 se 900 ho gayi","Production badha lekin productivity same rahi"],ans:1,exp:"Significance of wheat productivity growth: 660 → 3521 kg/hectare (5.3x). Similarly rice: 665 → 2838 kg/hectare (4.2x). Significance: (1) Demonstrates massive agricultural transformation post-independence. (2) Proof of Green Revolution success. (3) India food-surplus ho gaya from food-deficit. (4) Shows contrast of pre-independence backwardness vs post-independence development. (5) Basis for food security achievement. Ye sirf numbers nahi — ye policy success ki kahani hai."},
+{id:73,diff:"board",topic:"Board Q",q:"(BOARD 2023) British rule ne Indian economy mein kya structural changes kiye?",opts:["British ne India ka bhala kiya","Raw material supplier + market for British goods (demand) + deindustrialisation (handicrafts destroyed) + zamindari agricultural exploitation + railway for colonial benefit = complete structural transformation to serve British interests","British ne modern economy banayi India mein","India independent hi tha British se"],ans:1,exp:"Structural transformations: (1) Agriculture: subsistence → cash crop commercialisation. (2) Industry: flourishing handicrafts → deindustrialisation. (3) Trade: balanced self-sufficient → raw material exporter + finished goods importer. (4) Land: community-based → zamindari exploitative. (5) Railways: none → colonial network (for British, not India). Sab transformations Indian welfare ke liye nahi, British interests ke liye the. 'Structural' isliye kyunki ye deep systemic changes the, sirf surface level nahi."},
+{id:74,diff:"board",topic:"Board Q",q:"(BOARD 2022) 'Semi-feudal economy' ki characteristics explain karo — pre-independence India ke context mein.",opts:["India poori tarah modern capitalist tha","Zamindari land control + exploited tenant farmers + primitive farming methods + no land rights for farmers + market forces present but feudal relationships dominant = semi-feudal","India poori tarah feudal tha","India socialist economy tha"],ans:1,exp:"Semi-feudal characteristics in India: (1) Zamindars ka land pe absolute control — feudal element. (2) Tenant farmers (tillers) — exploited, no rights. (3) High land revenue/rents — feudal extraction. (4) Primitive farming methods — old feudal ways. (5) BUT market elements existed — money economy, trade, moneylending — kapitalist elements. Mixed: feudal land relations + emerging market = 'semi-feudal'. It was neither fully capitalist (market decides) nor fully feudal (traditional economy) — a transitional exploitative system."},
+{id:75,diff:"board",topic:"Board Q",q:"(BOARD 2024) Eve of independence pe India ki agriculture ki MAIN FEATURES kya thi? (6 features)",opts:["High productivity, modern methods, rich farmers, surplus production, good infrastructure, commercial farming","Low production & productivity + Exploitative land settlement + Forced commercialisation + Lack of infrastructure investment + Gap between owners & tillers + Small & fragmented holdings + Subsistence outlook — sab British colonial exploitation ke results the","India agriculture mein advanced tha","Agriculture thriving thi independence ke time"],ans:1,exp:"7 main features of agriculture on eve of independence: (a) Low production & productivity — primitive methods, no technology. (b) Exploitative land settlement — Zamindari, high revenue. (c) Forced commercialisation — cash crops forced, food neglected. (d) Lack of infrastructure — no irrigation, storage, credit. (e) Gap between owners & tillers — zamindars vs farmers. (f) Small & fragmented holdings — no economies of scale. (g) Subsistence outlook — only self-consumption, no surplus. ALL interconnected results of British colonial policies."},
+
+]; // end allQ
+
+// ============================================================
+//  STATE
+// ============================================================
+let currentMode = 'all';
+let activeQ = [];
+let answeredMap = {};
+let topicStats = {};
+
+// ============================================================
+//  TAB SWITCHING
+// ============================================================
+function showTab(tab) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(tab).classList.add('active');
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    if (b.getAttribute('onclick') && b.getAttribute('onclick').includes("'" + tab + "'")) b.classList.add('active');
+  });
+  window.scrollTo({top: 0, behavior: 'smooth'});
+  if (tab === 'flashcards') initFlashcards();
+}
+
+// ============================================================
+//  MCQ TEST
+// ============================================================
+function startTest(mode) {
+  currentMode = mode;
+  answeredMap = {};
+  topicStats = {};
+
+  // Hide result + analysis
+  document.getElementById('resultPanel').classList.remove('show');
+  document.getElementById('analysisSection').classList.remove('show');
+
+  // Filter
+  let pool = allQ;
+  if (mode === 'easy') pool = allQ.filter(q => q.diff === 'easy');
+  else if (mode === 'medium') pool = allQ.filter(q => q.diff === 'medium');
+  else if (mode === 'hard') pool = allQ.filter(q => q.diff === 'hard');
+  else if (mode === 'board') pool = allQ.filter(q => q.diff === 'board');
+
+  // Shuffle
+  activeQ = [...pool].sort(() => Math.random() - 0.5);
+
+  // Update filter button highlights
+  ['all','easy','medium','hard','board'].forEach(m => {
+    const btn = document.getElementById('fb-' + m);
+    if (btn) {
+      btn.classList.remove('f-active');
+      if (m === mode) btn.classList.add('f-active');
+    }
+  });
+
+  updateProgress();
+  renderQ();
+}
+
+function renderQ() {
+  const container = document.getElementById('questionsContainer');
+  container.innerHTML = '';
+  const letters = ['A','B','C','D'];
+
+  activeQ.forEach((q, idx) => {
+    const optHtml = q.opts.map((o, i) =>
+      `<li class="opt" id="opt_${q.id}_${i}" onclick="selectAns(${q.id},${i})">
+        <span class="opt-ltr">${letters[i]}</span><span>${o}</span>
+      </li>`
+    ).join('');
+
+    const diffLabel = {easy:'🟢 Easy', medium:'🟡 Medium', hard:'🔴 Hard', board:'📋 Board'}[q.diff];
+    const diffCls = {easy:'d-easy', medium:'d-medium', hard:'d-hard', board:'d-board'}[q.diff];
+
+    const card = document.createElement('div');
+    card.className = 'qcard';
+    card.id = `qc_${q.id}`;
+    card.style.animation = `fadeUp 0.4s ease ${idx * 0.04}s forwards`;
+    card.style.opacity = '0';
+    card.innerHTML = `
+      <div class="q-meta">
+        <span class="q-num">Q${idx + 1}</span>
+        <span class="q-tag">${q.topic}</span>
+        <span class="q-diff ${diffCls}">${diffLabel}</span>
+      </div>
+      <div class="q-text">${q.q}</div>
+      <ul class="opts">${optHtml}</ul>
+      <div class="exp" id="exp_${q.id}"><strong>💡 Explanation:</strong> ${q.exp}</div>
+    `;
+    container.appendChild(card);
+  });
+}
+
+function selectAns(qId, sel) {
+  if (answeredMap[qId] !== undefined) return;
+
+  const q = allQ.find(x => x.id === qId);
+  const correct = sel === q.ans;
+  answeredMap[qId] = {sel, correct};
+
+  if (!topicStats[q.topic]) topicStats[q.topic] = {correct: 0, total: 0};
+  topicStats[q.topic].total++;
+  if (correct) topicStats[q.topic].correct++;
+
+  // Style options
+  const card = document.getElementById(`qc_${qId}`);
+  card.querySelectorAll('.opt').forEach((el, i) => {
+    el.classList.add('disabled');
+    if (i === q.ans) el.classList.add('correct');
+    else if (i === sel && !correct) el.classList.add('wrong');
+  });
+
+  document.getElementById(`exp_${qId}`).classList.add('show');
+  card.classList.add(correct ? 'ans-correct' : 'ans-wrong');
+  updateProgress();
+
+  const shortAns = q.opts[q.ans].length > 45 ? q.opts[q.ans].substring(0,45)+'...' : q.opts[q.ans];
+  showToast(correct ? '✅ Bilkul Sahi!' : `❌ Galat! Sahi: ${shortAns}`);
+
+  if (Object.keys(answeredMap).length === activeQ.length) {
+    setTimeout(showResult, 900);
+  }
+}
+
+function updateProgress() {
+  const total = activeQ.length;
+  const answered = Object.keys(answeredMap).length;
+  const correct = Object.values(answeredMap).filter(x => x.correct).length;
+  const wrong = answered - correct;
+  const remaining = total - answered;
+  const pct = total > 0 ? Math.round(answered / total * 100) : 0;
+
+  document.getElementById('totalQ').textContent = total;
+  document.getElementById('correctQ').textContent = correct;
+  document.getElementById('wrongQ').textContent = wrong;
+  document.getElementById('remainQ').textContent = remaining;
+  document.getElementById('progressFill').style.width = pct + '%';
+}
+
+function showResult() {
+  const total = activeQ.length;
+  const correct = Object.values(answeredMap).filter(x => x.correct).length;
+  const wrong = total - correct;
+  const pct = Math.round(correct / total * 100);
+
+  let grade, gradeClass, emoji, msg;
+  if (pct >= 90) { grade='A+ 🌟'; gradeClass='ga'; emoji='🏆'; msg='Zabardast! Board exam mein full marks aayenge. Aap bilkul taiyaar hain!'; }
+  else if (pct >= 75) { grade='A 🎉'; gradeClass='ga'; emoji='🥇'; msg='Bahut achha! Thoda aur practice karo — A+ possible hai tumhare liye.'; }
+  else if (pct >= 60) { grade='B 👍'; gradeClass='gb'; emoji='😊'; msg='Achha performance! Jo galat gaya unke notes dobara padho, phir test do.'; }
+  else if (pct >= 40) { grade='C 📚'; gradeClass='gc'; emoji='💪'; msg='Mehnat ki zaroorat hai. Notes section mein jaake concepts clearly samjho.'; }
+  else { grade='D 📖'; gradeClass='gd'; emoji='🔄'; msg='Dar mat! Pehle notes ache se padho, flashcards use karo, phir test do.'; }
+
+  document.getElementById('resultEmoji').textContent = emoji;
+  document.getElementById('scoreDisplay').textContent = `${correct}/${total}`;
+  document.getElementById('gradeDisplay').textContent = grade;
+  document.getElementById('gradeDisplay').className = `res-grade ${gradeClass}`;
+  document.getElementById('res-correct').textContent = correct;
+  document.getElementById('res-wrong').textContent = wrong;
+  document.getElementById('res-total').textContent = total;
+  document.getElementById('res-pct').textContent = pct + '%';
+  document.getElementById('resultMessage').textContent = msg;
+
+  const panel = document.getElementById('resultPanel');
+  panel.classList.add('show');
+  panel.scrollIntoView({behavior: 'smooth'});
+}
+
+function showAnalysis() {
+  const section = document.getElementById('analysisSection');
+  const container = document.getElementById('topicAnalysis');
+  container.innerHTML = '';
+
+  if (Object.keys(topicStats).length === 0) {
+    container.innerHTML = '<p style="color:#888; font-size:13px;">Pehle kuch questions answer karo, phir analysis dikhega.</p>';
+    section.classList.add('show');
+    return;
+  }
+
+  Object.entries(topicStats).forEach(([topic, stats]) => {
+    const pct = Math.round(stats.correct / stats.total * 100);
+    const fillCls = pct >= 70 ? 'fg' : pct >= 40 ? 'fo' : 'fr';
+    const pctColor = pct >= 70 ? 'var(--green)' : pct >= 40 ? 'var(--saffron)' : '#d32f2f';
+
+    const row = document.createElement('div');
+    row.className = 'trow';
+    row.innerHTML = `
+      <div class="tname">${topic}</div>
+      <div class="tbar-w">
+        <div class="tbar"><div class="tfill ${fillCls}" style="width:0%" data-pct="${pct}"></div></div>
+        <div style="font-size:10px; color:#888; margin-top:2px;">${stats.correct}/${stats.total} sahi</div>
+      </div>
+      <div class="tpct" style="color:${pctColor}">${pct}%</div>
+    `;
+    container.appendChild(row);
+  });
+
+  section.classList.add('show');
+  setTimeout(() => {
+    document.querySelectorAll('.tfill').forEach(el => {
+      el.style.width = el.dataset.pct + '%';
+    });
+  }, 150);
+  section.scrollIntoView({behavior: 'smooth'});
+}
+
+// ============================================================
+//  FLASHCARDS (20 cards)
+// ============================================================
+const fcData_orig = [
+  {q:"Stagnant economy kya hoti hai?", a:"Aisi economy jisme aay mein bahut kam ya koi growth nahi hoti. India mein 20th century ke first half mein per capita growth sirf 0.5% per year tha — virtually no progress."},
+  {q:"1947-48 mein per capita income kitni thi aur iska kya matlab tha?", a:"Sirf ₹230 — jo India ko backward economy category mein daalta tha. Log basic necessities: khana, kapda, makaan se bhi vanchit the."},
+  {q:"British rule ka 'sole purpose' India mein kya tha?", a:"India ko raw material ka supplier aur British finished goods ka market banana. Ye colonial exploitation thi — Indian development British ka goal tha hi nahi."},
+  {q:"National income estimate karne wale 5 notable individuals kaun the?", a:"Dadabhai Naoroji, William Digby, Findlay Shirras, V.K.R.V. Rao, aur R.C. Desai. British government ne kabhi officially estimate nahi kiya."},
+  {q:"Independence ke eve pe kitni % population agriculture pe dependent thi?", a:"~80% population directly/indirectly agriculture pe dependent. ~70% working population agriculture mein engaged. Lekin famine baar baar aati thi!"},
+  {q:"'Forced Commercialisation of Agriculture' ka kya matlab tha aur kya effect tha?", a:"Farmers ko cash crops (indigo, cotton, jute) ugaane par majboor kiya gaya. Effect: food crops neglect hue → famines badhay + low prices pe bechna → poverty."},
+  {q:"'Semi-feudal economy' kya hoti hai?", a:"Aisi economy jisme zamindaaron ka land pe control ho, farmers dependent aur exploited hon. Market forces bhi thi lekin feudal land relationships dominant. 'Neither wholly capitalist nor feudal.'"},
+  {q:"Zamindari system ki main kharaabiyan kya thin?", a:"(1) High land revenue, (2) Land tenure security nahi, (3) Produce ka bada hissa zamindaar le leta, (4) Reinvest karne ke liye kuch nahi bachta, (5) Low productivity perpetual cycle."},
+  {q:"1947 mein wheat ki productivity aur 2022-23 mein kitni ho gayi?", a:"1947: 660 kg/hectare → 2022-23: 3521 kg/hectare. Almost 5.3× increase! Green Revolution + modern farming ka result."},
+  {q:"'Backward Economy' aur 'Stagnant Economy' mein kya antar hai?", a:"Backward = LEVEL problem (very low per capita income = ₹230). Stagnant = RATE problem (no growth in income = 0.5% per year). India 1947 mein dono tha!"},
+  {q:"Colonial exploitation ke 'supply side' aur 'demand side' kya the?", a:"Supply side: India raw material supplier tha (cotton, jute, indigo). Demand side: India British finished goods ka market ban gaya. Dono milke Indian economy ko hollow kar gaye."},
+  {q:"Eve of independence pe India ki urban population kitni thi?", a:"Sirf ~15% — limited urbanisation. Zyaada log gaanv mein rehte the, agriculture ke bahar employment bahut kam thi."},
+  {q:"'Small and Fragmented Holdings' agriculture ke liye kyun problem thi?", a:"Modern machinery ka cost recover nahi hota, irrigation efficiently nahi ho sakti, economies of scale absent, per unit transaction cost high — agricultural modernisation structurally impossible."},
+  {q:"British rule ne Indian handicraft industries ko kaise destroy kiya?", a:"British finished goods Indian market mein flood kiye + discrimination policies + Indian raw material British factories le gaye = demand completely khatam → Indian handicrafts destroyed."},
+  {q:"Per capita income ka formula kya hai?", a:"Per Capita Income = National Income ÷ Total Population. Average income per person. 1947-48 mein sirf ₹230 tha."},
+  {q:"Independence ke eve pe India mein famines aur epidemics kyun recurring the?", a:"Structural reasons: low productivity → food shortage + no irrigation + no storage + poverty → poor nutrition → weak immunity. Colonial exploitation ne ye sab create kiya."},
+  {q:"'Drain of Wealth' theory kisne di aur kya thi?", a:"Dadabhai Naoroji ne di. India ki wealth (resources, tax revenue) systematically Britain drain ho rahi thi without adequate return — colonial exploitation ka economic proof."},
+  {q:"Rice ki productivity 1947 se 2022-23 mein kitni badhi?", a:"665 kg/hectare (1947) → 2838 kg/hectare (2022-23). Approximately 4.2 times increase — post-independence agricultural revolution ka evidence."},
+  {q:"Pre-British India mein trade surplus kaisa tha?", a:"India handicrafts, cotton textiles, silk export karta tha → sona-chandi badle mein aata tha. India trade surplus mein tha — vibrant aur prosperous economy."},
+  {q:"Eve of independence pe India ki economy ko 'dependent' kyun kehte hain?", a:"British policies se: no industries → machinery import; no domestic goods → finished goods import; no technology → perpetual dependence. Structural dependence deliberately create ki gayi thi."},
+];
+
+let fcArr = [];
+let fcIdx = 0;
+let fcFlipped = false;
+
+function initFlashcards() {
+  fcArr = [...fcData_orig].sort(() => Math.random() - 0.5);
+  fcIdx = 0;
+  fcFlipped = false;
+  renderFC();
+}
+
+function renderFC() {
+  const fc = document.getElementById('flashcard');
+  fc.classList.remove('flipped');
+  fcFlipped = false;
+  document.getElementById('fc-question').textContent = fcArr[fcIdx].q;
+  document.getElementById('fc-answer').textContent = fcArr[fcIdx].a;
+  document.getElementById('fcCounter').textContent = `${fcIdx + 1} / ${fcArr.length}`;
+}
+
+function flipCard() {
+  fcFlipped = !fcFlipped;
+  document.getElementById('flashcard').classList.toggle('flipped', fcFlipped);
+}
+
+function nextCard() {
+  fcIdx = (fcIdx + 1) % fcArr.length;
+  renderFC();
+}
+
+function prevCard() {
+  fcIdx = (fcIdx - 1 + fcArr.length) % fcArr.length;
+  renderFC();
+}
+
+function shuffleCards() {
+  fcArr = [...fcData_orig].sort(() => Math.random() - 0.5);
+  fcIdx = 0;
+  renderFC();
+  showToast('🔀 Cards shuffle ho gaye!');
+}
+
+// ============================================================
+//  TOAST
+// ============================================================
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2800);
+}
+
+// ============================================================
+//  SCROLL TOP
+// ============================================================
+window.addEventListener('scroll', () => {
+  const btn = document.getElementById('scrollTopBtn');
+  if (btn) btn.classList.toggle('show', window.scrollY > 400);
+});
+
+// ============================================================
+//  INIT
+// ============================================================
+window.onload = () => {
+  startTest('all');
+  initFlashcards();
+};
+</script>
+</body>
+</html>
